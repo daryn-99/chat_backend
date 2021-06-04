@@ -6,6 +6,14 @@ const UsuarioSchema = Schema({
         type: String,
         required: true
     },
+    apellido: {
+        type: String,
+        required: true
+    },
+    numerotel: {
+            type: String,
+            required: true
+    },
     email: {
         type: String,
         required: true,
