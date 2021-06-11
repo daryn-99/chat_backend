@@ -11,4 +11,10 @@ const router = Router();
 
 router.get('/', validarJWT, getUsuarios );
 
+router.get('/:id', UserController.getById);
+
+router.patch('/:id', UserController.editUser);
+
+router.delete('/:id', UserController.deleteUser);
+
 module.exports = router;

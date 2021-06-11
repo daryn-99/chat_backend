@@ -9,7 +9,7 @@ const UsuarioSchema = Schema({
     apellido: {
         type: String,
         required: true
-    },
+    },//TODO:Validar que el numero sea unico
     numerotel: {
             type: String,
             required: true
@@ -27,6 +27,7 @@ const UsuarioSchema = Schema({
         type: Boolean,
         default: false
     },
+    //TODO: Agregar fecha de nacimiento, area, cargo, fecha de creacion(Automatica), imagen de perfil(Estipular una por defecto)(Estipular limite de espacio ejemplo: 5mb).
 
 });
 
