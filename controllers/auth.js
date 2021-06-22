@@ -4,11 +4,12 @@ const bcrypt = require('bcryptjs');
 const Usuario = require('../models/usuario');
 const { generarJWT } = require('../helpers/jwt');
 const usuario = require('../models/usuario');
+const Role = require('../models/role');
 
 
 const crearUsuario = async (req, res = response ) => {
 
-    const { email, password } = req.body;
+    const { email, password, role } = req.body;
 
     try {
 
@@ -25,16 +26,30 @@ const crearUsuario = async (req, res = response ) => {
         // Encriptar contraseña
         const salt = bcrypt.genSaltSync();
         usuario.password = bcrypt.hashSync( password, salt );
+        
+        //Si no se asigna un rol, asigna "empleado" automaticamente
+        if(role){
+            const foundRole = await Role.find({name: {$in: role}})
+            usuario.role = foundRole.map(role => role.id)
+        } else {
+            const role = await Role.findOne({name: 'empleado'})
+            usuario.role = [role.id]
+        }
+
+        if(req.file){
+            const {filename} = req.file
+            usuario.setImgUrl(filename)
+        }
 
         await usuario.save();
+        console.log(usuario)
 
         // Generar mi JWT
-        const token = await generarJWT( usuario.id );
-
+        /*const token = await generarJWT( usuario.id );
+        */
         res.json({
             ok: true,
-            usuario,
-            token
+            usuario
         });
 
 
@@ -53,12 +68,14 @@ const login = async ( req, res = response ) => {
 
     try {
         
-        const usuarioDB = await Usuario.findOne({ email });
+        const usuarioDB = await Usuario.findOne({ email }).populate('role');
+        console.log(usuarioDB);
         if ( !usuarioDB ) {
             return res.status(404).json({
                 ok: false,
                 msg: 'Email no encontrado'
             });
+            
         }
 
         // Validar el password

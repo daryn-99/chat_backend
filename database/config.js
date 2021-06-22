@@ -20,6 +20,15 @@ const dbConnection = async() => {
 
 }
 
+const configs = {
+    appConfig: 
+    {
+        host: process.env.DB_CNN,
+        port: process.env.PORT
+    }
+}
+
 module.exports = {
-    dbConnection
+    dbConnection,
+    configs
 }

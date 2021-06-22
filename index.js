@@ -2,6 +2,11 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
+
+
+require ('./libs/initialSetup').createRole();
+
+
 // DB Config
 require('./database/config').dbConnection();
 
@@ -20,7 +25,6 @@ require('./sockets/socket');
 
 
 
-
 // Path público
 const publicPath = path.resolve( __dirname, 'public' );
 app.use( express.static( publicPath ) );
@@ -31,7 +35,7 @@ app.use( express.static( publicPath ) );
 app.use( '/api/login', require('./routes/auth') );
 app.use( '/api/usuarios', require('./routes/usuarios') );
 app.use( '/api/mensajes', require('./routes/mensajes') );
-
+app.use('/public', express.static(`${__dirname}/storage/imgs`))
 
 
 server.listen( process.env.PORT, ( err ) => {

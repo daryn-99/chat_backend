@@ -1,4 +1,6 @@
 const jwt = require('jsonwebtoken');
+const usuario = require('../models/usuario');
+const Role = require('../models/role');
 
 const validarJWT = ( req, res, next ) => {
 
@@ -28,9 +30,44 @@ const validarJWT = ( req, res, next ) => {
 
 }
 
+const isAdmin = async (req, res, next) => {
+    const user = await usuario.findById(req.uid)
+    const roles = await Role.find({_id: {$in: user.role}})
+
+    for (let i = 0; i < roles.length; i++){
+        if(roles[i].name === "administrador"){
+            next();
+            return console.log("Accion realizada con exito"); //res.status(202).json({message: 'Accion realizada con exito'});
+        }
+    }
+
+    return res.status(403).json({message: 'Requiere permisos de administrador'});
+}
+
+
+const isGerente = async (req, res, next) => {
+    const user = await usuario.findById(req.uid)
+    const roles = await Role.find({_id: {$in: user.role}})
+
+    for (let i = 0; i < roles.length; i++){
+        if(roles[i].name === "gerente"){
+            next();
+            return res.status(202).json({message: 'Accion realizada con exito'});
+        }
+    }
+
+    return res.status(403).json({message: 'Requiere permisos de gerente'});
+}
+
+const isEmpleado = (req, res, next) => {
+    
+}
 
 module.exports = {
-    validarJWT
+    validarJWT,
+    isAdmin,
+    isGerente,
+    isEmpleado
 }
 
 
