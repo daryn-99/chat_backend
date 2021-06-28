@@ -5,6 +5,7 @@ const Usuario = require('../models/usuario');
 const { generarJWT } = require('../helpers/jwt');
 const usuario = require('../models/usuario');
 const Role = require('../models/role');
+const path = require('path');
 
 
 const crearUsuario = async (req, res = response ) => {
@@ -34,11 +35,6 @@ const crearUsuario = async (req, res = response ) => {
         } else {
             const role = await Role.findOne({name: 'empleado'})
             usuario.role = [role.id]
-        }
-
-        if(req.file){
-            const {filename} = req.file
-            usuario.setImgUrl(filename)
         }
 
         await usuario.save();

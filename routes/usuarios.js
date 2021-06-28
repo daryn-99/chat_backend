@@ -5,8 +5,7 @@
 const { Router } = require('express');
 const { validarJWT, isAdmin, isGerente, isEmpleado } = require('../middlewares/validar-jwt');
 
-const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid, updateUserImg} = require('../controllers/usuarios');
-const upload = require('../libs/storage');
+const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid} = require('../controllers/usuarios');
 
 
 const router = Router();
@@ -18,9 +17,7 @@ router.get('/:userId', validarJWT, getAllUsuarios );
 
 router.get('/:userId', validarJWT, getUsuarioById );
 
-router.put('/:userId', validarJWT, isAdmin, upload.single('imgUrl'), updateUserByid);
-
-router.put('/:userId', validarJWT, isAdmin, upload.single('imgUrl'), updateUserImg);
+router.put('/:userId', validarJWT, isAdmin, updateUserByid);
 
 router.delete('/:userId', [validarJWT, isAdmin], deleteUserByid);
 

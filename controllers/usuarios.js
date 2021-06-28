@@ -1,7 +1,7 @@
 const {response} = require('express');
 const Usuario = require('../models/usuario');
 // const imgUrl = require('../libs/storage');
-// const path = require('path');
+const path = require('path');
 
 
 const getUsuarios = async (req, res = response) => {
@@ -22,7 +22,7 @@ const getAllUsuarios = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const allUsuarios = await Usuario.find({_id: {$ne: req.uid}}).sort('nombre').skip(desde).limit(Usuario)
+    const allUsuarios = await Usuario.find({ }).sort('nombre').skip(desde).limit(Usuario)
 
     if (allUsuarios.length > 0) {
         res.send(allUsuarios);
@@ -51,15 +51,16 @@ const getUsuarioById = async (req, res = response) => {
 
 const updateUserByid = async (req, res = response) => {
 
-    const usuario = await Usuario.findOne(req.params.userId)
+    const updatedUser = await Usuario.findByIdAndUpdate(req.params.userId, req.body )
 
-    if(req.file){
-        const {filename} = req.file
-        usuario.setImgUrl(filename)
-    }
+    // if(req.file){
+    //     const {filename} = req.file
+    //     updatedUser.setImgUrl(filename)
+    // }
 
     res.json({
         ok: true,
+        updatedUser
     })
 }
 
@@ -72,18 +73,6 @@ const deleteUserByid = async (req, res = response) => {
     })
 }
 
-const updateUserImg = async (req, res = response) => {
-    const updateUser = await Usuario.findByIdAndUpdate(req.params.userId);
-
-    if(req.file){
-        const {filename} = req.file
-        usuario.setImgUrl(filename)
-    }
-    res.json({
-        ok: true,
-        updateUser
-    })
-}
 
 
 module.exports = {
@@ -91,6 +80,5 @@ module.exports = {
     getAllUsuarios,
     getUsuarioById,
     updateUserByid,
-    deleteUserByid,
-    updateUserImg
+    deleteUserByid
 }

@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const { roleSchema } = require('./role');
-const {config} = require('../database/config');
+//const {config} = require('../database/config');
 
 
 
@@ -18,12 +18,12 @@ const UsuarioSchema = Schema({
     apellido: {
         type: String,
         required: true
-    },//TODO:Validar que el numero sea unico
+    },
     numerotel: {
             type: String,
             required: true,
             unique: true
-    },
+    },//TODO:Validar que el numero sea unico
     birth: {
         type: String,
         required: true
@@ -53,10 +53,6 @@ const UsuarioSchema = Schema({
         ref: 'Role',
         type: Schema.Types.ObjectId
     }],
-    imgUrl: {
-        type: String,
-        default: ''
-    }
     //TODO: Agregar fecha de nacimiento, area, cargo, fecha de creacion(Automatica), imagen de perfil(Estipular una por defecto)(Estipular limite de espacio ejemplo: 5mb).
     },
     {
@@ -70,11 +66,6 @@ UsuarioSchema.method('toJSON', function() {
     object.uid = _id;
     return object;
 })
-
-UsuarioSchema.methods.setImgUrl = function setImgUrl () {
-    const { host, port } = configs
-    this.imgUrl = `${host}:${port}/public/${filename}`
-}
 
 
 module.exports = model('Usuario', UsuarioSchema );
