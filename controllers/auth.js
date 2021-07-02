@@ -22,6 +22,14 @@ const crearUsuario = async (req, res = response ) => {
             });
         }
 
+        const existeUsername = await Usuario.findOne({ username });
+        if( existeUsername) {
+            return res.status(400).json({
+                ok: false,
+                msg: 'El username ya está registrado'
+            });
+        }
+
         const usuario = new Usuario( req.body );
 
         // Encriptar contraseña

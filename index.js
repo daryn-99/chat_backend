@@ -36,8 +36,9 @@ app.use( '/api/login', require('./routes/auth') );
 app.use( '/api/usuarios', require('./routes/usuarios') );
 app.use( '/api/mensajes', require('./routes/mensajes') );
 app.use('/api/profile', require('./routes/profile'));
-//app.use('/public', express.static(`${__dirname}/storage/imgs`))
-app.use('/storage', express.static('storage'))
+app.use('/api/post', require('./routes/post')); 
+app.use('/storage', express.static(`${__dirname}/storage/imgs`))
+// app.use('/storage', express.static('storage'))
 
 
 server.listen( process.env.PORT, ( err ) => {

@@ -40,7 +40,7 @@ const getAllUsuarios = async (req, res = response) => {
 
 const getUsuarioById = async (req, res = response) => {
 
-    const usuario = await Usuario.findOne(req.params.userId)
+    const usuario = await Usuario.findOne(req.params.userId, req.body)
     //res.status(200).json(usuario) falta validacion
 
     res.json({

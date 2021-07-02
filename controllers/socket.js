@@ -20,6 +20,14 @@ const usuarioDesconectado = async (uid = '') => {
 }
 
 const grabarMensaje = async ( payload ) => {
+    /*
+    Ésto seria el payload
+        payload: {
+            de: '',
+            para: '',
+            texto: ''
+        }
+    */
     try {
         const mensaje = new Mensaje( payload );
         await mensaje.save();
