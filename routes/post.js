@@ -12,7 +12,7 @@ const upload = require('../middlewares/storage');
 
 router.post('/new', validarJWT, isAdmin, blogPost);
 
-router.patch('/new/coverImage', validarJWT, upload.single('coverImage'), addPostImg);
+router.post('/new/coverImage', validarJWT, upload.single('coverImage'), addPostImg);
 
 router.get('/getownpost', validarJWT, ownPost);
 

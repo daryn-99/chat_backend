@@ -11,7 +11,7 @@ const upload = require('../middlewares/storage');
 
 const router = Router();
 
-router.get('/checkprofiles', validarJWT, getProfiles );//TODO: Agregar permisos de Admin
+router.get('/checkprofiles', getProfiles );//TODO: Agregar permisos de Admin
 
 router.post('/add', addProfile);
 

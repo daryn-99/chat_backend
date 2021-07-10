@@ -6,9 +6,18 @@ const path = require('path');
 
 const getProfiles = async (req, res = response) => {
     
-    Profile.find({}, (err, docs) => {
-        res.send({docs})
+    const profile = Profile();
+    const post = await Profile.find(req.params.uid)
+
+    res.json({
+        ok: true,
+        post,
+        profile
+
     })
+    // Profile.find({}, (err, docs) => {
+    //     res.send({docs})
+    // })
     
 }
 
@@ -59,6 +68,7 @@ const updateProfileImg = async (req, res = response) => {
         res.json({
             ok: true,
             updateImg,
+            //'TODO: Agregar la validacion de limite de peso de multimedia'
         })
     }
 
