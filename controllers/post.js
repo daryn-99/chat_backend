@@ -5,19 +5,28 @@ const path = require('path');
 
 const blogPost = async (req, res = response) => {
 
-    const post = await Post(
-        {
-            user: req.uid,
-            title: req.body.title,
-            caption: req.body.caption
-        }
-    )
-    await post.save();
-
-    res.json({
-        ok: true,
-        post
-    });
+    try {
+        const post = await Post(
+            {
+                user: req.uid,
+                title: req.body.title,
+                caption: req.body.caption
+            }
+        )
+        await post.save();
+    
+        res.json({
+            ok: true,
+            post
+        });    
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Hable con el administrador'
+        });
+    }
+    
 }
 
 
@@ -64,12 +73,11 @@ const addPostImg = async (req, res = response) => {
 
 const getPost = async (req, res = response) => {
 
-    const post = await Post.find()
-
-    res.json({
-        ok:true,
-        post
-    })
+    Post.findOne({ user: req.uid }, (err, result) => {
+        if (err) return res.json({ err: err });
+        if (result == null) return res.json({ data: [] });
+        else return res.json({ data: result });
+        }).sort({createdAt: 'desc'});
 
 }
 

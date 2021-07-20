@@ -1,24 +1,47 @@
 const { response } = require("express");
 const Profile = require("../models/profile");
-const usuario = require("../models/usuario");
 const Usuario = require("../models/usuario");
+
 const path = require('path');
+const usuario = require("../models/usuario");
 
 const getProfiles = async (req, res = response) => {
+    // const usuario = await Usuario.findOne({name: req.params.name});
+    // const profiles = await Profile.findOne(req.params.uid,)
+    // if (!profiles) {
+    //     res.status(404).json({message: 'No hay descripcion de Usuario'});
+    // } 
+
+    // res.json({
+    //     ok: true,
+    //     profiles,
+    //     usuario
+    // })
+    Profile.find({}, (err, docs) => {
+        res.send({docs})
+    }).sort({createdAt: 'desc'});
     
-    const profile = Profile();
-    const post = await Profile.find(req.params.uid)
+}
+
+const getProfile = async (req, res = response) => {
+    Profile.findOne({ user: req.uid }, (err, result) => {
+    if (err) return res.json({ err: err });
+    if (result == null) return res.json({ data: [] });
+    else return res.json({ data: result });
+    }).sort({createdAt: 'desc'});
+}
+
+const getownProfile = async (req, res = response) => {
+    
+    const usuario = req.params.user;
+    const profile = await Profile.find(req.params.uid).sort({createdAt: 'desc'})
 
     res.json({
         ok: true,
-        post,
-        profile
+        profile,
+        usuario
 
     })
-    // Profile.find({}, (err, docs) => {
-    //     res.send({docs})
-    // })
-    
 }
 
 
@@ -27,6 +50,7 @@ const addProfile = async (req, res = response) => {
     const profile = await Profile({
         user: req.uid,
         about: req.body.about
+
     });
 
     await profile.save();
@@ -97,5 +121,7 @@ module.exports = {
     addProfile,
     updateProfileImg,
     getProfiles,
-    getProfileById
+    getProfileById,
+    getownProfile,
+    getProfile
 }

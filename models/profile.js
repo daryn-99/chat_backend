@@ -10,8 +10,7 @@ const ProfileSchema = Schema({
     },
     about: String,
     imgUrl: {
-        type: String,
-        default: ""
+        type: String
     },
 },
     {
