@@ -5,7 +5,11 @@ const PostSchema = Schema({
     user: {
         type: Schema .Types.ObjectId,
         ref: 'Usuario',
-        required: true
+        //required: true
+    },
+    otheruser: {
+        type: Schema .Types.ObjectId,
+        ref: 'Usuario',
     },
     title: { 
         type: String,
@@ -15,10 +19,15 @@ const PostSchema = Schema({
     },
     coverImage: {
         type: String,
-        default: "",
     },
-    like: Number,
-    comments: Number
+    like: {
+        type: Number,
+        default: 0
+    },
+    comments: {
+        type: Number,
+        default: 0
+    }
 }, {
     versionKey: false,
     timestamps: true
