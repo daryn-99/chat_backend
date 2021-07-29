@@ -8,9 +8,13 @@ const ProfileSchema = Schema({
         ref: 'Usuario',
 
     },
-    about: String,
+    about: {
+        type: String,
+        default: 'Agrega una descripción'
+    },
     imgUrl: {
-        type: String
+        type: String,
+        default: ''
     },
 },
     {

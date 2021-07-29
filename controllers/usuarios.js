@@ -17,30 +17,58 @@ const getUsuarios = async (req, res = response) => {
     })
 }
 
+const getLastUsers = async (req, res = response) => {
+
+    const desde = Number(req.query.desde) || 0;
+
+    const lastusers = await Usuario.find({ }).sort('createdAt').skip(desde).limit(Usuario)
+
+    res.json({
+        ok: true,
+        lastusers,
+        desde
+    })
+}
+
+const getUsersByGroups = async (req, res = response) => {
+
+    const desde = Number(req.query.desde) || 0;
+
+    const lastusers = await Usuario.findOne({ }).sort('area').skip(desde).limit(Usuario)
+
+    res.json({
+        ok: true,
+        lastusers,
+        desde
+    })
+}
+
+
 
 const getAllUsuarios = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const allUsuarios = await Usuario.find({ }).sort('nombre').skip(desde).limit(Usuario)
+    const allUsuarios = await Usuario.find({ }).sort('area').skip(desde).limit(Usuario)
 
-    if (allUsuarios.length > 0) {
-        res.send(allUsuarios);
-    } else {
-        res.status(404).json({message: 'No hay registros de Usuarios'})
-    }
+    // if (allUsuarios.length > 0) {
+    //     res.send(allUsuarios);
+    // } else {
+    //     res.status(404).json({message: 'No hay registros de Usuarios'})
+    // }
 
 
     res.json({
         ok: true,
         allUsuarios,
+        desde
     })
 }
 
 
 const getUsuarioById = async (req, res = response) => {
 
-    const usuario = await Usuario.findOne(req.params.userId, req.body)
+    const usuario = await Usuario.findOne(req.params.area, req.body)
     //res.status(200).json(usuario) falta validacion
 
     res.json({
@@ -80,5 +108,7 @@ module.exports = {
     getAllUsuarios,
     getUsuarioById,
     updateUserByid,
-    deleteUserByid
+    deleteUserByid,
+    getLastUsers,
+    getUsersByGroups
 }

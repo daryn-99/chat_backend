@@ -12,10 +12,9 @@ const blogPost = async (req, res = response) => {
             {
                 user: req.uid,
                 title: req.body.title,
-                caption: req.body.caption,
-                coverImage: req.file.path
+                // coverImage: req.file.path
             }
-        )
+        );
         await post.save();
 
         res.json({
@@ -47,52 +46,22 @@ const blogPost = async (req, res = response) => {
 }
 
 
-const addPostImg = async (req, res = response) => {
+const updatePostImg = async (req, res = response) => {
 
-    // Post.findByIdAndUpdate({
-    //     user: req.uid
-    // },
-    //     {
-    //         $set: {
-    //             coverImage: req.file.path,
-    //         },
-    //     },
-    //     { new: true },
-    //     (err, result) => {
-    //         if (err) return res.json(err);
-    //         return res.json(result);
-    //     })
-
-    // const imgPost = await Post.findByIdAndUpdate({ _id: req.params.id }, {
-    //     $set: {
-    //         coverImage: req.file.path,
-    //     },
-    // },
-    // { new: true },
-    // (err, result) => {
-    //     if (err) return res.json(err);
-    //     return res.json(result);
-    // });
-
-
-
-    Post.findOneAndUpdate({
-        _id: req.params.id,
-    }, {
+    Post.findOneAndUpdate({ user: req.uid }, 
+        {
         $set: {
             coverImage: req.file.path
         },
     }, { new: true },
-        (err, result) => {
-            if (err) return res.json(err);
-            return res.json(result);
+        (err, post) => {
+            if (err) return res.status(500).send(err);
+            const response = {
+                message: "image added successfully updated",
+                data: post,
+            };
+            return res.status(200).send(response);
         });
-
-    //     await imgPost.save();
-    //     res.status(201).send('File Uploaded Successfully');
-    // }catch(error) {
-    //     res.status(400).send(error.message);
-    // }
 }
 
 const getPost = async (req, res = response) => {
@@ -172,10 +141,12 @@ const deletePostByid = async (req, res = response) => {
     );
 }
 
+
+
 module.exports = {
     blogPost,
-    addPostImg,
     ownPost,
+    updatePostImg,
     getPost,
     otherPost,
     deletePostByid

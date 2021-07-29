@@ -7,18 +7,12 @@ const PostSchema = Schema({
         ref: 'Usuario',
         //required: true
     },
-    otheruser: {
-        type: Schema .Types.ObjectId,
-        ref: 'Usuario',
-    },
     title: { 
-        type: String,
-    },
-    caption: { 
         type: String,
     },
     coverImage: {
         type: String,
+        default: ''
     },
     like: {
         type: Number,

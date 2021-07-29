@@ -28,6 +28,10 @@ require('./sockets/socket');
 // Path público
 const publicPath = path.resolve( __dirname, 'public' );
 app.use( express.static( publicPath ) );
+app.use('/api/storage/posts',express.static('storage/posts'));
+app.use('/api/storage',express.static('storage'));
+//app.use('/api/storage/imgs', express.static(path.join(__dirname, '/storage/imgs'))); 
+
 
 
 
@@ -37,8 +41,9 @@ app.use( '/api/usuarios', require('./routes/usuarios') );
 app.use( '/api/mensajes', require('./routes/mensajes') );
 app.use('/api/profile', require('./routes/profile'));
 app.use('/api/post', require('./routes/post')); 
+
 //app.use('/storage', express.static(`${__dirname}/storage/imgs`))
-app.use('/storage', express.static(path.join(__dirname, '/storage/imgs'))); 
+
 // app.use('/storage', express.static('storage'))
 
 
