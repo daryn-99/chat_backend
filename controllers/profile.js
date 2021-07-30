@@ -124,12 +124,16 @@ const updateProfileImg = async (req, res = response) => {
     //         profile = result;
     //     }
     // });
+    const remove = path.join(__dirname,'..','storage')
+    const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+    const imgUrl = relPath;
     Profile.findOneAndUpdate(
+        
         { user: req.uid },
         {
             $set: {
                 //about: req.body.about ? req.body.about : profile.about,
-                imgUrl: req.file.path,
+                imgUrl: relPath,
             },
         },
         { new: true },

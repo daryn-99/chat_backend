@@ -1,9 +1,14 @@
 const multer = require("multer");
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
 //Estipula la ruta y nombre con los que se guardarán las imagenes
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "./storage/posts");
+        const uploadsDir = path.join(__dirname,'..','storage','posts')
+        // fs.mkdirSync(uploadsDir)
+        cb(null, uploadsDir)
     },
     filename: (req, file, cb) => {
         console.log(file);

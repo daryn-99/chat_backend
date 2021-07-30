@@ -47,11 +47,13 @@ const blogPost = async (req, res = response) => {
 
 
 const updatePostImg = async (req, res = response) => {
-
+    const remove = path.join(__dirname,'..','storage')
+    const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+    const imgUrl = relPath;
     Post.findOneAndUpdate({ user: req.uid }, 
         {
         $set: {
-            coverImage: req.file.path
+            coverImage: relPath
         },
     }, { new: true },
         (err, post) => {
@@ -94,25 +96,25 @@ const ownPost = async (req, res = response) => {
 
 
 const otherPost = async (req, res = response) => {
-    // const miId = req.uid;
-    // const postDe = req.params.user;
-
-    // const last30 = await Post.find({
-    //     $or: [{ user: miId, otheruser: postDe },
-    //     { user: postDe, otheruser: miId }]
-    // })
-    //     .sort({ createdAt: 'desc' });
-
-    // res.json({
-    //     ok: true,
-    //     posts: last30,
-    // });
     const miId = req.uid;
+    const postDe = req.params.user;
 
-    Post.find({ user: { $ne: miId } }, (err, result) => {
-        if (err) return res.json(err);
-        return res.json({ data: result });
-    }).sort({ createdAt: 'desc' });
+    const last30 = await Post.find({
+        $or: [{ user: miId, otheruser: postDe },
+        { user: postDe, otheruser: miId }]
+    })
+        .sort({ createdAt: 'desc' });
+
+    res.json({
+        ok: true,
+        posts: last30,
+    });
+    // const miId = req.uid;
+
+    // Post.find({ user: { $ne: miId } }, (err, result) => {
+    //     if (err) return res.json(err);
+    //     return res.json({ data: result });
+    // }).sort({ createdAt: 'desc' });
 
 }
 
