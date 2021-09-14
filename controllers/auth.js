@@ -10,7 +10,7 @@ const path = require('path');
 
 const crearUsuario = async (req, res = response ) => {
 
-    const { email, password, role } = req.body;
+    const { email, password, role, username } = req.body;
 
     try {
 

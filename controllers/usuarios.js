@@ -1,5 +1,6 @@
-const {response} = require('express');
+const {response, Router} = require('express');
 const Usuario = require('../models/usuario');
+const Role = require('../models/role')
 // const imgUrl = require('../libs/storage');
 const path = require('path');
 
@@ -30,11 +31,20 @@ const getLastUsers = async (req, res = response) => {
     })
 }
 
+const getUserRole = async (req, res = response) => {
+    const rolesuser = await Role.find({})
+
+    res.json({
+        ok: true,
+        rolesuser
+    })
+}
+
 const getUsersByGroups = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const lastusers = await Usuario.findOne({ }).sort('area').skip(desde).limit(Usuario)
+    const lastusers = await Usuario.find({online: true}).sort('updatedAt')
 
     res.json({
         ok: true,
@@ -110,5 +120,6 @@ module.exports = {
     updateUserByid,
     deleteUserByid,
     getLastUsers,
-    getUsersByGroups
+    getUsersByGroups,
+    getUserRole
 }

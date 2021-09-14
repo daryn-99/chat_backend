@@ -3,6 +3,28 @@ const Post = require('../models/post');
 const Usuario = require('../models/usuario');
 const path = require('path');
 
+const express = require("express");
+const router = express.Router();
+const multer = require("multer");
+
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const uploadsDir = path.join(__dirname,'..','storage','posts')
+        cb(null, uploadsDir)
+    },
+    filename: (req, file, cb) => {
+        console.log(file);
+        cb(null, `${req.params.id}-${file.originalname}`);
+    },
+});
+
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024 * 1024 * 6,
+    },
+});
 
 const blogPost = async (req, res = response) => {
 
@@ -12,15 +34,22 @@ const blogPost = async (req, res = response) => {
             {
                 user: req.uid,
                 title: req.body.title,
-                // coverImage: req.file.path
+                //coverImage: req.file.path
             }
         );
-        await post.save();
-
-        res.json({
-            ok: true,
-            post
+        // await post.save();
+        // res.json({
+        //     ok: true,
+        //     post
+        // });
+        await post.save().then((result) => {
+            res.json({data: result["_id"]});
         });
+
+        // res.json({
+        //     ok: true,
+        //     post
+        // });
     } catch (error) {
         console.log(error);
         res.status(500).json({
@@ -45,25 +74,30 @@ const blogPost = async (req, res = response) => {
 
 }
 
-
-const updatePostImg = async (req, res = response) => {
+// router.route('/updateImg/:id').patch(validarJWT, upload.single('coverImage'), (req, res) => {
+    const updatePostImg = async (req, res = response) => {
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
     const imgUrl = relPath;
-    Post.findOneAndUpdate({ user: req.uid }, 
+    Post.findOneAndUpdate({ _id: req.params.id }, 
         {
         $set: {
-            coverImage: relPath
+            coverImage: relPath,
         },
     }, { new: true },
-        (err, post) => {
-            if (err) return res.status(500).send(err);
-            const response = {
-                message: "image added successfully updated",
-                data: post,
-            };
-            return res.status(200).send(response);
-        });
+        (err, result) => {
+            if (err) return res.json(err);
+            return res.json(result);
+        } 
+    );
+        // {
+        //     if (err) return res.status(500).send(err);
+        //     const response = {
+        //         message: "image added successfully updated",
+        //         data: post,
+        //     };
+        //     return res.status(200).send(response);
+        // });
 }
 
 const getPost = async (req, res = response) => {
@@ -96,25 +130,25 @@ const ownPost = async (req, res = response) => {
 
 
 const otherPost = async (req, res = response) => {
-    const miId = req.uid;
-    const postDe = req.params.user;
-
-    const last30 = await Post.find({
-        $or: [{ user: miId, otheruser: postDe },
-        { user: postDe, otheruser: miId }]
-    })
-        .sort({ createdAt: 'desc' });
-
-    res.json({
-        ok: true,
-        posts: last30,
-    });
     // const miId = req.uid;
+    // const postDe = req.params.user;
 
-    // Post.find({ user: { $ne: miId } }, (err, result) => {
-    //     if (err) return res.json(err);
-    //     return res.json({ data: result });
-    // }).sort({ createdAt: 'desc' });
+    // const last30 = await Post.find({
+    //     $or: [{ user: miId, otheruser: postDe },
+    //     { user: postDe, otheruser: miId }]
+    // })
+    //     .sort({ createdAt: 'desc' });
+
+    // res.json({
+    //     ok: true,
+    //     posts: last30,
+    // });
+    const miId = req.uid;
+
+    Post.find({}, (err, result) => {
+        if (err) return res.json(err);
+        return res.json({ data: result });
+    }).sort({ createdAt: 'desc' });
 
 }
 
@@ -151,5 +185,6 @@ module.exports = {
     updatePostImg,
     getPost,
     otherPost,
-    deletePostByid
+    deletePostByid,
+    upload
 }

@@ -26,7 +26,7 @@ const UsuarioSchema = Schema({
     },//TODO:Validar que el numero sea unico
     birth: {
         type: String,
-        required: true
+        
     },
     cargo: {
         type: String,
@@ -47,7 +47,6 @@ const UsuarioSchema = Schema({
     },
     online: {
         type: Boolean,
-        default: false
     },
     role: [{
         ref: 'Role',
