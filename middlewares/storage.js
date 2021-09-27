@@ -5,14 +5,14 @@ const path = require('path');
 
 
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
+    destination: (req, file, cb) => {
         const uploadsDir = path.join(__dirname,'..','storage')
         // fs.mkdirSync(uploadsDir)
         cb(null, uploadsDir)
     },
     filename: (req, file, cb) => {
         console.log(file);
-        cb(null, `${Date.now()}-${file.originalname}`);
+        cb(null, `${req.params.id}-${file.originalname}`);
     }
 })
 
@@ -28,7 +28,7 @@ const storage = multer.diskStorage({
 const upload = multer({ 
     storage,
     limits: {
-        fileSize: 1024 * 1024 * 10,
+        fileSize: 1024 * 1024 * 6,
     },
     //fileFilter
 });

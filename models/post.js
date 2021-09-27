@@ -14,11 +14,11 @@ const PostSchema = Schema({
         type: String,
         default: ''
     },
-    like: {
+    comment: {
         type: Number,
         default: 0
     },
-    comments: {
+    count: {
         type: Number,
         default: 0
     }

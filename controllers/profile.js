@@ -5,6 +5,29 @@ const Usuario = require("../models/usuario");
 const path = require('path');
 const usuario = require("../models/usuario");
 
+const express = require("express");
+const router = express.Router();
+const multer = require("multer");
+
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const uploadsDir = path.join(__dirname,'..','storage')
+        cb(null, uploadsDir)
+    },
+    filename: (req, file, cb) => {
+        console.log(file);
+        cb(null, `${req.params.id}-${file.originalname}`);
+    },
+});
+
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024 * 1024 * 6,
+    },
+});
+
 const getProfiles = async (req, res = response) => {
     // const usuario = await Usuario.findOne({name: req.params.name});
     // const profiles = await Profile.findOne(req.params.uid,)
@@ -115,15 +138,6 @@ const update = async (req, res = response) => {
 }
 
 const updateProfileImg = async (req, res = response) => {
-    // let profile = {};
-    // await Profile.findOne({ user: req.uid }, (err, result) => {
-    //     if (err) {
-    //         profile = {};
-    //     }
-    //     if (result != null) {
-    //         profile = result;
-    //     }
-    // });
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
     const imgUrl = relPath;
@@ -137,14 +151,18 @@ const updateProfileImg = async (req, res = response) => {
             },
         },
         { new: true },
-        (err, profile) => {
-            if (err) return res.status(500).send(err);
-            const response = {
-                message: "image added successfully updated",
-                data: profile,
-            };
-            return res.status(200).send(response);
+        (err, result) => {
+            if (err) return res.json(err);
+            return res.json(result);
         }
+        // (err, profile) => {
+        //     if (err) return res.status(500).send(err);
+        //     const response = {
+        //         message: "image added successfully updated",
+        //         data: profile,
+        //     };
+        //     return res.status(200).send(response);
+        // }
     );
 }
 
@@ -156,5 +174,6 @@ module.exports = {
     getProfileById,
     getownProfile,
     getProfile,
-    update
+    update,
+    upload
 }

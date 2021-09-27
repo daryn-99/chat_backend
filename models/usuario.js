@@ -47,6 +47,7 @@ const UsuarioSchema = Schema({
     },
     online: {
         type: Boolean,
+        default: false
     },
     role: [{
         ref: 'Role',

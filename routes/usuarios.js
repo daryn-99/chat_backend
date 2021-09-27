@@ -5,7 +5,7 @@
 const { Router } = require('express');
 const { validarJWT, isAdmin, isGerente, isEmpleado } = require('../middlewares/validar-jwt');
 
-const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid, getLastUsers, getUsersByGroups, getUserRole} = require('../controllers/usuarios');
+const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid, getLastUsers, getUsersByGroups, getUserRole, passwordUpdate} = require('../controllers/usuarios');
 
 
 const router = Router();
@@ -23,12 +23,11 @@ router.get('/lastusers', validarJWT, getLastUsers );
 
 router.get('/orderbygroups', validarJWT, getUsersByGroups )
 
-router.put('/:userId', validarJWT, isAdmin, updateUserByid);
+router.put('/updateUser/:userId', validarJWT, updateUserByid);
 
-router.delete('/:userId', [validarJWT, isAdmin], deleteUserByid);
+router.patch('/passwordUpdate/:email', passwordUpdate);
 
+router.delete('/delete/:userId', [validarJWT, isAdmin], deleteUserByid);
 
-//Ruta para guardar las imagenes en la base de datos
-//router.patch()
 
 module.exports = router;

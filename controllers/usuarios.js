@@ -1,4 +1,4 @@
-const {response, Router} = require('express');
+const { response, Router } = require('express');
 const Usuario = require('../models/usuario');
 const Role = require('../models/role')
 // const imgUrl = require('../libs/storage');
@@ -9,7 +9,7 @@ const getUsuarios = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const usuarios = await Usuario.find({_id: {$ne: req.uid}}).sort('-online').skip(desde).limit(Usuario)
+    const usuarios = await Usuario.find({ _id: { $ne: req.uid } }).sort('-online').skip(desde).limit(Usuario)
 
     res.json({
         ok: true,
@@ -22,7 +22,7 @@ const getLastUsers = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const lastusers = await Usuario.find({ }).sort('createdAt').skip(desde).limit(Usuario)
+    const lastusers = await Usuario.find({}).sort('createdAt').skip(desde).limit(Usuario)
 
     res.json({
         ok: true,
@@ -44,7 +44,7 @@ const getUsersByGroups = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const lastusers = await Usuario.find({online: true}).sort('updatedAt')
+    const lastusers = await Usuario.find({ online: true }).sort('updatedAt')
 
     res.json({
         ok: true,
@@ -59,7 +59,7 @@ const getAllUsuarios = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const allUsuarios = await Usuario.find({ }).sort('area').skip(desde).limit(Usuario)
+    const allUsuarios = await Usuario.find({}).sort('area').skip(desde).limit(Usuario)
 
     // if (allUsuarios.length > 0) {
     //     res.send(allUsuarios);
@@ -89,7 +89,7 @@ const getUsuarioById = async (req, res = response) => {
 
 const updateUserByid = async (req, res = response) => {
 
-    const updatedUser = await Usuario.findByIdAndUpdate(req.params.userId, req.body )
+    const updatedUser = await Usuario.findByIdAndUpdate(req.params.userId, req.body)
 
     // if(req.file){
     //     const {filename} = req.file
@@ -111,6 +111,69 @@ const deleteUserByid = async (req, res = response) => {
     })
 }
 
+const passwordUpdate = async (req, res = response) => {
+
+
+    const { email, password } = req.params;
+
+    try {
+        const existeEmail = await Usuario.findOne({ email });
+        if (!existeEmail) {
+            return res.status(400).json({
+                ok: false,
+                msg: 'El correo no está registrado'
+            });
+        }
+        const updatedPass = await Usuario.findOneAndUpdate({ email: req.params.email },
+            {
+                $set:
+                    { password: req.body.password }
+            },
+            {new: true},
+            (err, result) => {
+                if(err) return res.json(err);
+                return res.json(result);
+            }
+            );
+
+        // if(req.file){
+        //     const {filename} = req.file
+        //     updatedUser.setImgUrl(filename)
+        // }
+
+        // res.json({
+        //     ok: true,
+        //     updatedPass
+        // })
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({
+            ok: false,
+            msg: 'Hable con el administrador'
+        })
+    }
+}
+
+
+
+
+
+
+// console.log(req.params.userId);
+// Usuario.findOneAndUpdate(
+//     { userId: req.params.userId },
+//     {
+//         $set: { password: req.body.password, }
+//     },
+//     (err, result) => {
+//         if (err) return res.status(500).json({msg: err});
+//         const msg = {
+//             msg: 'Contraseña actualizada',
+//             userId: req.params.userId,
+//         };
+//         return res.json(msg);
+//     }
+// );
 
 
 module.exports = {
@@ -121,5 +184,6 @@ module.exports = {
     deleteUserByid,
     getLastUsers,
     getUsersByGroups,
-    getUserRole
+    getUserRole,
+    passwordUpdate
 }

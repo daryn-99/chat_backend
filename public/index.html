@@ -22,7 +22,7 @@
         });
 
 
-        socket.emit('mensaje', { nombre: 'Daryn' } );
+        socket.emit('mensaje', { nombre: 'Hello' } );
 
         socket.on('mensaje', function( payload ){
             console.log('Escuhando:', payload );

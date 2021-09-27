@@ -111,55 +111,30 @@ const getPost = async (req, res = response) => {
 }
 
 const ownPost = async (req, res = response) => {
-    // const usuario = Usuario();
-    // const post = await Post.find(req.params.uid)
 
-    // res.json({
-    //     ok: true,
-    //     post, 
-    //     usuario
-
-    // })
     const miId = req.uid;
 
     Post.find({ $or: [{ user: miId }] }, (err, result) => {
-        if (err) return res.json(err);
-        return res.json({ data: result });
+        if (err) return res.json({err: err});
+        if (result == null) return res.json({data: []});
+        else return res.json({ data: result });
     }).sort({ createdAt: 'desc' });
 }
 
 
 const otherPost = async (req, res = response) => {
-    // const miId = req.uid;
-    // const postDe = req.params.user;
 
-    // const last30 = await Post.find({
-    //     $or: [{ user: miId, otheruser: postDe },
-    //     { user: postDe, otheruser: miId }]
-    // })
-    //     .sort({ createdAt: 'desc' });
-
-    // res.json({
-    //     ok: true,
-    //     posts: last30,
-    // });
     const miId = req.uid;
 
     Post.find({}, (err, result) => {
-        if (err) return res.json(err);
-        return res.json({ data: result });
+        if (err) return res.json({err:err});
+        if (result==null) return res.json({data: []});
+        else return res.json({ data: result });
     }).sort({ createdAt: 'desc' });
 
 }
 
 const deletePostByid = async (req, res = response) => {
-    //Elimina los post de todos
-    // const deletedPost = await Post.findByIdAndDelete(req.params.id)
-
-    // res.json({
-    //     ok: true,
-    //     deletedPost
-    // })
     const miId = req.uid
 
     Post.findOneAndDelete(
