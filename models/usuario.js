@@ -53,7 +53,11 @@ const UsuarioSchema = Schema({
         ref: 'Role',
         type: Schema.Types.ObjectId
     }],
-    //TODO: Agregar fecha de nacimiento, area, cargo, fecha de creacion(Automatica), imagen de perfil(Estipular una por defecto)(Estipular limite de espacio ejemplo: 5mb).
+    imgUrl: {
+        type: String,
+        default: ''
+    },
+    
     },
     {
         timestamps: true,

@@ -1,8 +1,15 @@
 const { response, Router } = require('express');
 const Usuario = require('../models/usuario');
-const Role = require('../models/role')
+const Role = require('../models/role');
 // const imgUrl = require('../libs/storage');
 const path = require('path');
+
+require('dotenv').config();
+const nodemailer = require('nodemailer');
+const bcrypt = require('bcryptjs');
+const { reset } = require('nodemon');
+const { generarJWT } = require('../helpers/jwt');
+
 
 
 const getUsuarios = async (req, res = response) => {
@@ -154,26 +161,128 @@ const passwordUpdate = async (req, res = response) => {
     }
 }
 
+const emailForgotPassword = 
+    async (req, res = response ) => {
+
+        //const { email} = req.params;
+
+        if (req.body.email == '') {
+            res.status(400).send({
+                msg: 'El email es requerido'
+            })
+        }
+
+    // try {
+        const user = await Usuario.findOne({
+            where: {
+                email: req.body.email
+            }
+            })
+
+        if( user ) {
+            return res.status(400).json({
+                ok: false,
+                msg: 'El correo no está registrado'
+            });
+        }
+
+            const token = await generarJWT( user );
+
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.mailtrap.io',
+            port: 587,
+            secure: true,
+            auth: {
+                user: 'f3019b4e45c176',
+                pass: 'd18ec6e302219d'
+                // user: `${process.env.EMAIL_ADDRESS}`,
+                // pass: `${process.env.EMAIL_PASSWORD}`,
+            }
+        });
+
+        //const emailPort = process.env.PORT || 3000;
+
+        const mailOptions = {
+            from: '"Hello"<puertosammir@gmail.com>',
+            to: `${user}`,
+            subject: 'Enlace para recuperar tu contraseña',
+            text: `http://localhost:3000/api/usuarios/resetpassword`
+        };
+
+        
+
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+                console.error('Ha ocurrido un error:', err);
+            }else {
+                console.log('Respuesta: '+ info.response);
+                res.status(200).json('El mail de recuperación ha sido enviado');
+            }
+        })
+
+    // } catch (error) {
+    //     res.status(500).send({
+    //         msg: 'Ha ocurrido un error',
+    //         error
+    //     })
+    // }
+}
+
+
+let regExPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$1%*?&#]{8,16}$/;
+
+const resetPassword = 
+    async (req, res=response) => {
+        if (!regExPassword.test(req.body.password)) {
+            res.send({
+                msg: 'La contraseña debe de contener por lo menos: Entre 8 y 16 cáracteres, 1 numero, 1 letra minuscula, 1 letra mayuscula y un caracter especial'
+            });
+            return;
+        }
+
+        try {
+            req.body.password = await bcrypt.hash(req.body.password, 10)
+            const resetpassword = await Usuario.updateOne(req.body, {
+                where: {
+                    user: req.params.user, tokenresetPassword: req.params.tokenresetPassword
+                }       
+            });
+            res.status(201).send({
+                msg: 'Contraseña actualizada con éxito'
+            })
+        } catch (err) {
+            res.status(500).send({
+                msg: 'Error',
+                err
+            })
+        }
+    }
+
+    const updateImg = async (req, res = response) => {
+        const remove = path.join(__dirname,'..','storage')
+        const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+        
+        Usuario.findOneAndUpdate(
+            
+            { user: req.uid },
+            {
+                $set: {
+                    imgUrl: relPath,
+                },
+            },
+            { new: true },
+            (err, result) => {
+                if (err) return res.json(err);
+                return res.json(result);
+            }
+        );
+    }
+    
 
 
 
 
 
-// console.log(req.params.userId);
-// Usuario.findOneAndUpdate(
-//     { userId: req.params.userId },
-//     {
-//         $set: { password: req.body.password, }
-//     },
-//     (err, result) => {
-//         if (err) return res.status(500).json({msg: err});
-//         const msg = {
-//             msg: 'Contraseña actualizada',
-//             userId: req.params.userId,
-//         };
-//         return res.json(msg);
-//     }
-// );
 
 
 module.exports = {
@@ -185,5 +294,8 @@ module.exports = {
     getLastUsers,
     getUsersByGroups,
     getUserRole,
-    passwordUpdate
+    passwordUpdate,
+    emailForgotPassword,
+    resetPassword,
+    updateImg
 }

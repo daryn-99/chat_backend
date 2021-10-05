@@ -26,6 +26,16 @@ const upload = multer({
     },
 });
 
+const stories = async (req, res = response) => {
+    try {
+        const userStories = await Post.find({})
+        .populate("user", "nombre apellido imgUrl")
+        res.status(201).json(userStories);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 const blogPost = async (req, res = response) => {
 
     try {
@@ -161,5 +171,6 @@ module.exports = {
     getPost,
     otherPost,
     deletePostByid,
-    upload
+    upload,
+    stories
 }

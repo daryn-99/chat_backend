@@ -11,6 +11,7 @@ const path = require('path');
 const crearUsuario = async (req, res = response ) => {
 
     const { email, password, role, username } = req.body;
+    
 
     try {
 
@@ -131,9 +132,28 @@ const renewToken = async( req, res = response) => {
 
 }
 
+const updateImg = async (req, res = response) => {
+    const remove = path.join(__dirname,'..','storage')
+    const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+    const imgUrl = relPath;
+    Usuario.findOneAndUpdate({ _id: req.params.id }, 
+        {
+        $set: {
+            imgUrl: relPath,
+        },
+    }, { new: true },
+        (err, result) => {
+            if (err) return res.json(err);
+            return res.json(result);
+        } 
+    );
+}
+
+
 
 module.exports = {
     crearUsuario,
     login,
-    renewToken
+    renewToken,
+    updateImg
 }

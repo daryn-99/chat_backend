@@ -1,20 +1,16 @@
 const { Schema, model } = require('mongoose');
-const { UsuarioSchema } = require('./usuario')
+const { UsuarioSchema } = require('./usuario');
+const {ObjectId} = Schema.Types;
 //TODO:Terminar
 const ProfileSchema = Schema({
 
     user: {
-        type: Schema.Types.ObjectId,
+        type: ObjectId,
         ref: 'Usuario',
-
     },
     about: {
         type: String,
         default: 'Agrega una descripción'
-    },
-    imgUrl: {
-        type: String,
-        default: ''
     },
 },
     {

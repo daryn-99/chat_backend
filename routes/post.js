@@ -7,7 +7,7 @@ const { Router } = require('express');
 const { validarJWT, isAdmin } = require('../middlewares/validar-jwt');
 const { validarCampos } = require('../middlewares/validar-campos');
 
-const { blogPost, ownPost, getPost, otherPost, deletePostByid, updatePostImg, upload } = require('../controllers/post');
+const { blogPost, ownPost, getPost, otherPost, deletePostByid, updatePostImg, upload, stories } = require('../controllers/post');
 const router = Router();
 const postUploads = require('../middlewares/postStorage');
 const { check } = require('express-validator');
@@ -27,6 +27,8 @@ router.get('/getOtherPost', validarJWT, otherPost);
 router.delete('/:id', validarJWT, isAdmin, deletePostByid);
 
 router.patch('/updateImg/:id', validarJWT, upload.single('coverImage'), updatePostImg);
+
+router.get('/getStoryOther', validarJWT, stories);
 
 
 

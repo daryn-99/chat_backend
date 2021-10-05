@@ -4,29 +4,8 @@ const Usuario = require("../models/usuario");
 
 const path = require('path');
 const usuario = require("../models/usuario");
+const { isEmpty } = require("class-validator");
 
-const express = require("express");
-const router = express.Router();
-const multer = require("multer");
-
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        const uploadsDir = path.join(__dirname,'..','storage')
-        cb(null, uploadsDir)
-    },
-    filename: (req, file, cb) => {
-        console.log(file);
-        cb(null, `${req.params.id}-${file.originalname}`);
-    },
-});
-
-const upload = multer({
-    storage: storage,
-    limits: {
-        fileSize: 1024 * 1024 * 6,
-    },
-});
 
 const getProfiles = async (req, res = response) => {
     // const usuario = await Usuario.findOne({name: req.params.name});
@@ -40,8 +19,11 @@ const getProfiles = async (req, res = response) => {
     //     profiles,
     //     usuario
     // })
-    Profile.find({}, (err, docs) => {
-        res.send({ docs })
+
+    Profile.find({}, (err, result) => {
+        if (err) return res.json({err:err});
+        if(result==null) return res.json({dato: []});
+        else return res.json({data: result});
     }).sort({ createdAt: 'desc' });
 
 }
@@ -51,13 +33,14 @@ const getProfile = async (req, res = response) => {
         if (err) return res.json({ err: err });
         if (result == null) return res.json({ data: ['Agrega una descripcion'] });
         else return res.json({ data: result });
-    }).sort({ createdAt: 'desc' });
+    }).sort({ createdAt: 'desc' })
 }
 
 const getownProfile = async (req, res = response) => {
 
     const usuario = req.params.user;
-    const profile = await Profile.find(req.params.uid).sort({ createdAt: 'desc' })
+    const profile = await Profile.find(req.params.uid).sort({ createdAt: 'desc' }).populate({ path: 'nombre', model: 'Usuario' });
+    
 
     res.json({
         ok: true,
@@ -140,7 +123,15 @@ const update = async (req, res = response) => {
 const updateProfileImg = async (req, res = response) => {
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
-    const imgUrl = relPath;
+    //const imgUrl = relPath;
+    const {imgUrl} = req.params;
+    const existeFoto = await Profile.find({imgUrl});
+    if(existeFoto == ""){
+        return res.status(400).json({
+            ok: false,
+            msg: 'No hay foto'
+        });
+    }
     Profile.findOneAndUpdate(
         
         { user: req.uid },
@@ -174,6 +165,5 @@ module.exports = {
     getProfileById,
     getownProfile,
     getProfile,
-    update,
-    upload
+    update
 }
