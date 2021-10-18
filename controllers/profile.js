@@ -23,7 +23,7 @@ const getProfiles = async (req, res = response) => {
     Profile.find({}, (err, result) => {
         if (err) return res.json({err:err});
         if(result==null) return res.json({dato: []});
-        else return res.json({data: result});
+        else return res.json({dato: result});
     }).sort({ createdAt: 'desc' });
 
 }
@@ -31,7 +31,7 @@ const getProfiles = async (req, res = response) => {
 const getProfile = async (req, res = response) => {
     Profile.findOne({ user: req.uid }, (err, result) => {
         if (err) return res.json({ err: err });
-        if (result == null) return res.json({ data: ['Agrega una descripcion'] });
+        if (result == null) return res.json({ data: ['Añade una descripción'] });
         else return res.json({ data: result });
     }).sort({ createdAt: 'desc' })
 }
@@ -157,6 +157,31 @@ const updateProfileImg = async (req, res = response) => {
     );
 }
 
+const addProfileImg = async (req, res = response) => {
+
+    try {
+        const profile = await Profile({
+            user: req.uid,
+            imgUrl: req.file.path
+
+        });
+
+        await profile.save();
+
+        res.json({
+            ok: true,
+            profile
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Hable con el administrador'
+        })
+    }
+
+
+}
 
 module.exports = {
     addProfile,
@@ -165,5 +190,6 @@ module.exports = {
     getProfileById,
     getownProfile,
     getProfile,
-    update
+    update,
+    addProfileImg
 }

@@ -25,6 +25,9 @@ const PostSchema = Schema({
     count: {
         type: Number,
         default: 0
+    },
+    postedTime: {
+        type: Date
     }
 }, {
     versionKey: false,

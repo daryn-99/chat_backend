@@ -10,13 +10,19 @@ const bcrypt = require('bcryptjs');
 const { reset } = require('nodemon');
 const { generarJWT } = require('../helpers/jwt');
 
-
+const getOneUsuario = async (req, res = response) => {
+    Usuario.findOne({data: req.uid} , (err, result) => {
+        if (err) return res.json({ err: err });
+        if (result == null) return res.json({ data: ['A'] });
+        else return res.json({ data: result });
+    }).sort({ createdAt: 'desc' })
+}
 
 const getUsuarios = async (req, res = response) => {
 
     const desde = Number(req.query.desde) || 0;
 
-    const usuarios = await Usuario.find({ _id: { $ne: req.uid } }).sort('-online').skip(desde).limit(Usuario)
+    const usuarios = await Usuario.find({ _id: { $ne: req.uid } }).sort('-online').skip(desde).limit(Usuario).populate("role", "name")
 
     res.json({
         ok: true,
@@ -39,7 +45,7 @@ const getLastUsers = async (req, res = response) => {
 }
 
 const getUserRole = async (req, res = response) => {
-    const rolesuser = await Role.find({})
+    const rolesuser = await Usuario.find({user: req.uid}).populate('role', 'name');
 
     res.json({
         ok: true,
@@ -297,5 +303,6 @@ module.exports = {
     passwordUpdate,
     emailForgotPassword,
     resetPassword,
-    updateImg
+    updateImg,
+    getOneUsuario
 }

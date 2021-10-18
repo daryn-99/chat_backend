@@ -27,13 +27,19 @@ const upload = multer({
 });
 
 const stories = async (req, res = response) => {
-    try {
-        const userStories = await Post.find({})
-        .populate("user", "nombre apellido imgUrl")
-        res.status(201).json(userStories);
-    } catch (error) {
-        console.log(error)
-    }
+    // try {
+    //     const userStories = await Post.find({})
+    //     .populate("user", "nombre apellido imgUrl")
+    //     res.status(201).json(userStories);
+    // } catch (error) {
+    //     console.log(error)
+    // }
+
+    Post.find({}, (err, result) => {
+        if (err) return res.json({err:err});
+        if (result==null) return res.json({data: []});
+        else return res.json({ data: result });
+    }).populate("user", "nombre apellido imgUrl").sort({ createdAt: 'desc' });
 }
 
 const blogPost = async (req, res = response) => {
@@ -140,7 +146,7 @@ const otherPost = async (req, res = response) => {
         if (err) return res.json({err:err});
         if (result==null) return res.json({data: []});
         else return res.json({ data: result });
-    }).sort({ createdAt: 'desc' });
+    }).populate("user", "nombre apellido imgUrl").sort({ createdAt: 'desc' });
 
 }
 

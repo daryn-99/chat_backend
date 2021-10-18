@@ -4,7 +4,7 @@
 */
 
 const { Router } = require('express');
-const { validarJWT, isAdmin } = require('../middlewares/validar-jwt');
+const { validarJWT, isAdmin, isGerente } = require('../middlewares/validar-jwt');
 const { validarCampos } = require('../middlewares/validar-campos');
 
 const { blogPost, ownPost, getPost, otherPost, deletePostByid, updatePostImg, upload, stories } = require('../controllers/post');
@@ -15,7 +15,7 @@ const { check } = require('express-validator');
 
 router.post('/new',[
     check('title', 'El titulo es obligatorio').not().isEmpty(),
-    validarJWT, isAdmin,
+    validarJWT, isAdmin, isGerente,
 ],  blogPost);
 
 router.get('/getownpost', validarJWT, ownPost);
@@ -24,9 +24,9 @@ router.get('/get', validarJWT, getPost);
 
 router.get('/getOtherPost', validarJWT, otherPost);
 
-router.delete('/:id', validarJWT, isAdmin, deletePostByid);
+router.delete('/:id', validarJWT, isAdmin, isGerente, deletePostByid);
 
-router.patch('/updateImg/:id', validarJWT, upload.single('coverImage'), updatePostImg);
+router.patch('/updateImg/:id', isAdmin, isGerente, validarJWT, upload.single('coverImage'), updatePostImg);
 
 router.get('/getStoryOther', validarJWT, stories);
 

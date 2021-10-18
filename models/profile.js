@@ -12,6 +12,10 @@ const ProfileSchema = Schema({
         type: String,
         default: 'Agrega una descripción'
     },
+    imgUrl: {
+        type: String,
+        default: ''
+    },
 },
     {
         timestamps: true,

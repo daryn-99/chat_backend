@@ -6,7 +6,7 @@ const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        const uploadsDir = path.join(__dirname,'..','storage', 'usuarios')
+        const uploadsDir = path.join(__dirname,'..','storage')
         // fs.mkdirSync(uploadsDir)
         cb(null, uploadsDir)
     },
