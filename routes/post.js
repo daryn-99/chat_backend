@@ -15,7 +15,7 @@ const { check } = require('express-validator');
 
 router.post('/new',[
     check('title', 'El titulo es obligatorio').not().isEmpty(),
-    validarJWT, isAdmin, isGerente,
+    validarJWT, isAdmin || isGerente,
 ],  blogPost);
 
 router.get('/getownpost', validarJWT, ownPost);
@@ -24,9 +24,9 @@ router.get('/get', validarJWT, getPost);
 
 router.get('/getOtherPost', validarJWT, otherPost);
 
-router.delete('/:id', validarJWT, isAdmin, isGerente, deletePostByid);
+router.delete('/:id', validarJWT, isAdmin || isGerente, deletePostByid);
 
-router.patch('/updateImg/:id', isAdmin, isGerente, validarJWT, upload.single('coverImage'), updatePostImg);
+router.patch('/updateImg/:id', validarJWT, isAdmin || isGerente, upload.single('coverImage'), updatePostImg);
 
 router.get('/getStoryOther', validarJWT, stories);
 

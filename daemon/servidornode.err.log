@@ -1,0 +1,640 @@
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44
+      throw new Error('PID must be a number.')
+      ^
+
+Error: PID must be a number.
+    at Object.kill (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\cmd.js:44:13)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:78:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+(node:13844) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13844) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:13844) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+internal/fs/utils.js:314
+    throw err;
+    ^
+
+Error: EPERM: operation not permitted, unlink 'C:\daemon\nodeserverservice.exe'
+    at Object.unlinkSync (fs.js:1251:3)
+    at rm (C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\daemon.js:603:22)
+    at C:\Users\Daryn\AppData\Roaming\npm\node_modules\node-windows\lib\daemon.js:616:15
+    at ChildProcess.exithandler (child_process.js:310:7)
+    at ChildProcess.emit (events.js:375:28)
+    at maybeClose (internal/child_process.js:1055:16)
+    at Socket.<anonymous> (internal/child_process.js:441:11)
+    at Socket.emit (events.js:375:28)
+    at Pipe.<anonymous> (net.js:675:12) {
+  errno: -4048,
+  syscall: 'unlink',
+  code: 'EPERM',
+  path: 'C:\\daemon\\nodeserverservice.exe'
+}
+(node:10288) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10288) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:10288) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+MongooseError: Operation `roles.estimatedDocumentCount()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:197:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+(node:3536) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3536) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:3536) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+MongooseError: Operation `roles.estimatedDocumentCount()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:197:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+(node:12548) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12548) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:12548) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+MongooseError: Operation `roles.estimatedDocumentCount()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:197:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+(node:7108) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7108) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:7108) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+MongooseError: Operation `roles.estimatedDocumentCount()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:197:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+(node:12368) UnhandledPromiseRejectionWarning: Error: Error en la base de datos - Hable con el admin
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:18:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12368) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:12368) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+MongooseError: Operation `roles.estimatedDocumentCount()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:197:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55
+    console.log(`Servidor corriendo en puerto ${PORT}` );
+                                                ^
+
+ReferenceError: PORT is not defined
+    at Server.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:55:49)
+    at Object.onceWrapper (events.js:481:28)
+    at Server.emit (events.js:387:35)
+    at emitListeningNT (net.js:1354:10)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read property 'send' of null
+    at process.killkid (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (events.js:375:28)
+    at process.exit (internal/process/per_thread.js:169:15)
+    at monitor (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (events.js:375:28)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+(node:11724) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11724) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:11724) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:11724) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:11724) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:11724) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:11724) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)
+(node:6276) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6276) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:6276) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:10244) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10244) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:10244) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:14140) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14140) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:14140) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:14140) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:14140) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:3688) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3688) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:3688) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3688) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:3688) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:3688) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:3688) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)
+(node:3688) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:3688) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
+(node:7212) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7212) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:7212) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:7212) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:7212) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:15108) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15108) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:15108) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:15108) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:15108) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:13236) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. See: https://mongoosejs.com/docs/deprecations.html#findandmodify
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:12592) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12592) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:12592) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:12592) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'role' of null
+    at isAdmin (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\middlewares\validar-jwt.js:35:52)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:12592) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:6064) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. See: https://mongoosejs.com/docs/deprecations.html#findandmodify
+(Use `node --trace-deprecation ...` to show where the warning was created)

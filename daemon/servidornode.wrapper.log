@@ -1,0 +1,452 @@
+2021-10-18 18:13:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-18 18:13:42 - Started 7264
+2021-10-18 18:15:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-18 18:15:10 - Started 1504
+2021-10-18 18:21:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-18 18:21:09 - Started 6488
+2021-10-18 18:24:33 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-18 18:24:33 - Started 7632
+2021-10-18 18:25:34 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-18 18:25:34 - Started 10884
+2021-10-19 07:38:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 07:38:12 - Started 13680
+2021-10-19 08:01:02 - Stopping servidornode.exe
+2021-10-19 08:01:02 - ProcessKill 13680
+2021-10-19 08:01:03 - Found child process: 13740 Name: conhost.exe
+2021-10-19 08:01:03 - Found child process: 10288 Name: node.exe
+2021-10-19 08:01:03 - Stopping process 13740
+2021-10-19 08:01:03 - Send SIGINT 13740
+2021-10-19 08:01:03 - SIGINT to 13740 failed - Killing as fallback
+2021-10-19 08:01:03 - Stopping process 10288
+2021-10-19 08:01:03 - Send SIGINT 10288
+2021-10-19 08:01:03 - SIGINT to 10288 failed - Killing as fallback
+2021-10-19 08:01:03 - Stopping process 13680
+2021-10-19 08:01:03 - Send SIGINT 13680
+2021-10-19 08:01:03 - SIGINT to 13680 failed - Killing as fallback
+2021-10-19 08:01:03 - Finished servidornode.exe
+2021-10-19 08:01:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 08:01:04 - Started 6236
+2021-10-19 08:06:41 - Stopping servidornode.exe
+2021-10-19 08:06:41 - ProcessKill 6236
+2021-10-19 08:06:42 - Found child process: 12500 Name: conhost.exe
+2021-10-19 08:06:42 - Found child process: 3536 Name: node.exe
+2021-10-19 08:06:42 - Stopping process 12500
+2021-10-19 08:06:42 - Send SIGINT 12500
+2021-10-19 08:06:42 - SIGINT to 12500 failed - Killing as fallback
+2021-10-19 08:06:42 - Stopping process 3536
+2021-10-19 08:06:42 - Send SIGINT 3536
+2021-10-19 08:06:42 - SIGINT to 3536 failed - Killing as fallback
+2021-10-19 08:06:42 - Stopping process 6236
+2021-10-19 08:06:42 - Send SIGINT 6236
+2021-10-19 08:06:42 - SIGINT to 6236 failed - Killing as fallback
+2021-10-19 08:06:42 - Finished servidornode.exe
+2021-10-19 08:06:43 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 08:06:43 - Started 12556
+2021-10-19 08:08:09 - Stopping servidornode.exe
+2021-10-19 08:08:09 - ProcessKill 12556
+2021-10-19 08:08:09 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2021-10-19 08:09:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 08:09:00 - Started 6752
+2021-10-19 08:23:11 - Stopping servidornode.exe
+2021-10-19 08:23:11 - ProcessKill 6752
+2021-10-19 08:23:12 - Found child process: 6776 Name: conhost.exe
+2021-10-19 08:23:12 - Found child process: 7108 Name: node.exe
+2021-10-19 08:23:12 - Stopping process 6776
+2021-10-19 08:23:12 - Send SIGINT 6776
+2021-10-19 08:23:12 - SIGINT to 6776 failed - Killing as fallback
+2021-10-19 08:23:12 - Stopping process 7108
+2021-10-19 08:23:12 - Send SIGINT 7108
+2021-10-19 08:23:13 - SIGINT to 7108 failed - Killing as fallback
+2021-10-19 08:23:13 - Stopping process 6752
+2021-10-19 08:23:13 - Send SIGINT 6752
+2021-10-19 08:23:13 - SIGINT to 6752 failed - Killing as fallback
+2021-10-19 08:23:13 - Finished servidornode.exe
+2021-10-19 08:23:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 08:23:16 - Started 2888
+2021-10-19 09:11:15 - Stopping servidornode.exe
+2021-10-19 09:11:15 - ProcessKill 2888
+2021-10-19 09:11:15 - Found child process: 9596 Name: conhost.exe
+2021-10-19 09:11:15 - Found child process: 12368 Name: node.exe
+2021-10-19 09:11:15 - Stopping process 9596
+2021-10-19 09:11:15 - Send SIGINT 9596
+2021-10-19 09:11:15 - SIGINT to 9596 failed - Killing as fallback
+2021-10-19 09:11:15 - Stopping process 12368
+2021-10-19 09:11:15 - Send SIGINT 12368
+2021-10-19 09:11:15 - SIGINT to 12368 failed - Killing as fallback
+2021-10-19 09:11:15 - Stopping process 2888
+2021-10-19 09:11:15 - Send SIGINT 2888
+2021-10-19 09:11:15 - SIGINT to 2888 failed - Killing as fallback
+2021-10-19 09:11:15 - Finished servidornode.exe
+2021-10-19 09:11:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:11:16 - Started 12144
+2021-10-19 09:28:56 - Stopping servidornode.exe
+2021-10-19 09:28:56 - ProcessKill 12144
+2021-10-19 09:28:56 - Found child process: 5684 Name: conhost.exe
+2021-10-19 09:28:56 - Found child process: 6676 Name: node.exe
+2021-10-19 09:28:56 - Stopping process 5684
+2021-10-19 09:28:56 - Send SIGINT 5684
+2021-10-19 09:28:56 - SIGINT to 5684 failed - Killing as fallback
+2021-10-19 09:28:56 - Stopping process 6676
+2021-10-19 09:28:56 - Send SIGINT 6676
+2021-10-19 09:28:56 - SIGINT to 6676 failed - Killing as fallback
+2021-10-19 09:28:56 - Stopping process 12144
+2021-10-19 09:28:56 - Send SIGINT 12144
+2021-10-19 09:28:56 - SIGINT to 12144 failed - Killing as fallback
+2021-10-19 09:28:56 - Finished servidornode.exe
+2021-10-19 09:28:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:28:59 - Started 12800
+2021-10-19 09:50:16 - Stopping servidornode.exe
+2021-10-19 09:50:16 - ProcessKill 12800
+2021-10-19 09:50:17 - Found child process: 3564 Name: conhost.exe
+2021-10-19 09:50:17 - Found child process: 13356 Name: node.exe
+2021-10-19 09:50:17 - Stopping process 3564
+2021-10-19 09:50:17 - Send SIGINT 3564
+2021-10-19 09:50:17 - SIGINT to 3564 failed - Killing as fallback
+2021-10-19 09:50:17 - Stopping process 13356
+2021-10-19 09:50:17 - Send SIGINT 13356
+2021-10-19 09:50:17 - SIGINT to 13356 failed - Killing as fallback
+2021-10-19 09:50:17 - Stopping process 12800
+2021-10-19 09:50:17 - Send SIGINT 12800
+2021-10-19 09:50:17 - SIGINT to 12800 failed - Killing as fallback
+2021-10-19 09:50:17 - Finished servidornode.exe
+2021-10-19 09:50:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:50:22 - Started 5548
+2021-10-19 09:51:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:51:35 - Started 3648
+2021-10-19 09:52:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:52:04 - Started 640
+2021-10-19 09:52:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:52:22 - Started 1008
+2021-10-19 09:52:25 - Stopping servidornode.exe
+2021-10-19 09:52:25 - ProcessKill 1008
+2021-10-19 09:52:25 - Found child process: 14764 Name: conhost.exe
+2021-10-19 09:52:25 - Found child process: 1236 Name: node.exe
+2021-10-19 09:52:25 - Stopping process 14764
+2021-10-19 09:52:25 - Send SIGINT 14764
+2021-10-19 09:52:25 - SIGINT to 14764 failed - Killing as fallback
+2021-10-19 09:52:25 - Stopping process 1236
+2021-10-19 09:52:25 - Send SIGINT 1236
+2021-10-19 09:52:25 - SIGINT to 1236 failed - Killing as fallback
+2021-10-19 09:52:25 - Stopping process 1008
+2021-10-19 09:52:25 - Send SIGINT 1008
+2021-10-19 09:52:25 - SIGINT to 1008 failed - Killing as fallback
+2021-10-19 09:52:25 - Finished servidornode.exe
+2021-10-19 09:52:26 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:52:27 - Started 11868
+2021-10-19 09:53:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:53:12 - Started 8340
+2021-10-19 09:53:55 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 09:53:55 - Started 2904
+2021-10-19 10:02:02 - Stopping servidornode.exe
+2021-10-19 10:02:02 - ProcessKill 2904
+2021-10-19 10:02:02 - Found child process: 5908 Name: conhost.exe
+2021-10-19 10:02:02 - Found child process: 5284 Name: node.exe
+2021-10-19 10:02:02 - Stopping process 5908
+2021-10-19 10:02:02 - Send SIGINT 5908
+2021-10-19 10:02:02 - SIGINT to 5908 failed - Killing as fallback
+2021-10-19 10:02:02 - Stopping process 5284
+2021-10-19 10:02:02 - Send SIGINT 5284
+2021-10-19 10:02:02 - SIGINT to 5284 failed - Killing as fallback
+2021-10-19 10:02:02 - Stopping process 2904
+2021-10-19 10:02:02 - Send SIGINT 2904
+2021-10-19 10:02:02 - SIGINT to 2904 failed - Killing as fallback
+2021-10-19 10:02:02 - Finished servidornode.exe
+2021-10-19 10:02:03 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:02:03 - Started 13880
+2021-10-19 10:04:28 - Stopping servidornode.exe
+2021-10-19 10:04:28 - ProcessKill 13880
+2021-10-19 10:04:28 - Found child process: 14592 Name: conhost.exe
+2021-10-19 10:04:28 - Found child process: 3768 Name: node.exe
+2021-10-19 10:04:28 - Stopping process 14592
+2021-10-19 10:04:28 - Send SIGINT 14592
+2021-10-19 10:04:28 - SIGINT to 14592 failed - Killing as fallback
+2021-10-19 10:04:28 - Stopping process 3768
+2021-10-19 10:04:28 - Send SIGINT 3768
+2021-10-19 10:04:28 - SIGINT to 3768 failed - Killing as fallback
+2021-10-19 10:04:28 - Stopping process 13880
+2021-10-19 10:04:28 - Send SIGINT 13880
+2021-10-19 10:04:28 - SIGINT to 13880 failed - Killing as fallback
+2021-10-19 10:04:28 - Finished servidornode.exe
+2021-10-19 10:04:29 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:04:29 - Started 1200
+2021-10-19 10:09:35 - Stopping servidornode.exe
+2021-10-19 10:09:35 - ProcessKill 1200
+2021-10-19 10:09:36 - Found child process: 11212 Name: conhost.exe
+2021-10-19 10:09:36 - Found child process: 13320 Name: node.exe
+2021-10-19 10:09:36 - Stopping process 11212
+2021-10-19 10:09:36 - Send SIGINT 11212
+2021-10-19 10:09:36 - SIGINT to 11212 failed - Killing as fallback
+2021-10-19 10:09:36 - Stopping process 13320
+2021-10-19 10:09:36 - Send SIGINT 13320
+2021-10-19 10:09:36 - SIGINT to 13320 failed - Killing as fallback
+2021-10-19 10:09:36 - Stopping process 1200
+2021-10-19 10:09:36 - Send SIGINT 1200
+2021-10-19 10:09:36 - SIGINT to 1200 failed - Killing as fallback
+2021-10-19 10:09:36 - Finished servidornode.exe
+2021-10-19 10:09:37 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:09:37 - Started 10484
+2021-10-19 10:28:45 - Stopping servidornode.exe
+2021-10-19 10:28:45 - ProcessKill 10484
+2021-10-19 10:28:46 - Found child process: 5964 Name: conhost.exe
+2021-10-19 10:28:46 - Found child process: 11980 Name: node.exe
+2021-10-19 10:28:46 - Stopping process 5964
+2021-10-19 10:28:46 - Send SIGINT 5964
+2021-10-19 10:28:46 - SIGINT to 5964 failed - Killing as fallback
+2021-10-19 10:28:46 - Stopping process 11980
+2021-10-19 10:28:46 - Send SIGINT 11980
+2021-10-19 10:28:46 - SIGINT to 11980 failed - Killing as fallback
+2021-10-19 10:28:46 - Stopping process 10484
+2021-10-19 10:28:46 - Send SIGINT 10484
+2021-10-19 10:28:46 - SIGINT to 10484 failed - Killing as fallback
+2021-10-19 10:28:46 - Finished servidornode.exe
+2021-10-19 10:28:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:28:47 - Started 13940
+2021-10-19 10:31:32 - Stopping servidornode.exe
+2021-10-19 10:31:32 - ProcessKill 13940
+2021-10-19 10:31:33 - Found child process: 14156 Name: conhost.exe
+2021-10-19 10:31:33 - Found child process: 2816 Name: node.exe
+2021-10-19 10:31:33 - Stopping process 14156
+2021-10-19 10:31:33 - Send SIGINT 14156
+2021-10-19 10:31:33 - SIGINT to 14156 failed - Killing as fallback
+2021-10-19 10:31:33 - Stopping process 2816
+2021-10-19 10:31:33 - Send SIGINT 2816
+2021-10-19 10:31:33 - SIGINT to 2816 failed - Killing as fallback
+2021-10-19 10:31:33 - Stopping process 13940
+2021-10-19 10:31:33 - Send SIGINT 13940
+2021-10-19 10:31:33 - SIGINT to 13940 failed - Killing as fallback
+2021-10-19 10:31:33 - Finished servidornode.exe
+2021-10-19 10:48:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:48:22 - Started 11008
+2021-10-19 10:51:40 - Stopping servidornode.exe
+2021-10-19 10:51:40 - ProcessKill 11008
+2021-10-19 10:51:41 - Found child process: 12388 Name: conhost.exe
+2021-10-19 10:51:41 - Found child process: 5720 Name: node.exe
+2021-10-19 10:51:41 - Stopping process 12388
+2021-10-19 10:51:41 - Send SIGINT 12388
+2021-10-19 10:51:41 - SIGINT to 12388 failed - Killing as fallback
+2021-10-19 10:51:41 - Stopping process 5720
+2021-10-19 10:51:41 - Send SIGINT 5720
+2021-10-19 10:51:41 - SIGINT to 5720 failed - Killing as fallback
+2021-10-19 10:51:41 - Stopping process 11008
+2021-10-19 10:51:41 - Send SIGINT 11008
+2021-10-19 10:51:41 - SIGINT to 11008 failed - Killing as fallback
+2021-10-19 10:51:41 - Finished servidornode.exe
+2021-10-19 10:51:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:51:42 - Started 6816
+2021-10-19 10:54:41 - Stopping servidornode.exe
+2021-10-19 10:54:41 - ProcessKill 6816
+2021-10-19 10:54:42 - Found child process: 4032 Name: conhost.exe
+2021-10-19 10:54:42 - Found child process: 11724 Name: node.exe
+2021-10-19 10:54:42 - Stopping process 4032
+2021-10-19 10:54:42 - Send SIGINT 4032
+2021-10-19 10:54:42 - SIGINT to 4032 failed - Killing as fallback
+2021-10-19 10:54:42 - Stopping process 11724
+2021-10-19 10:54:42 - Send SIGINT 11724
+2021-10-19 10:54:42 - SIGINT to 11724 failed - Killing as fallback
+2021-10-19 10:54:42 - Stopping process 6816
+2021-10-19 10:54:42 - Send SIGINT 6816
+2021-10-19 10:54:42 - SIGINT to 6816 failed - Killing as fallback
+2021-10-19 10:54:42 - Finished servidornode.exe
+2021-10-19 10:54:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:54:43 - Started 764
+2021-10-19 10:58:32 - Stopping servidornode.exe
+2021-10-19 10:58:32 - ProcessKill 764
+2021-10-19 10:58:32 - Found child process: 9296 Name: conhost.exe
+2021-10-19 10:58:32 - Found child process: 6276 Name: node.exe
+2021-10-19 10:58:32 - Stopping process 9296
+2021-10-19 10:58:33 - Send SIGINT 9296
+2021-10-19 10:58:33 - SIGINT to 9296 failed - Killing as fallback
+2021-10-19 10:58:33 - Stopping process 6276
+2021-10-19 10:58:33 - Send SIGINT 6276
+2021-10-19 10:58:33 - SIGINT to 6276 failed - Killing as fallback
+2021-10-19 10:58:33 - Stopping process 764
+2021-10-19 10:58:33 - Send SIGINT 764
+2021-10-19 10:58:33 - SIGINT to 764 failed - Killing as fallback
+2021-10-19 10:58:33 - Finished servidornode.exe
+2021-10-19 10:58:33 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 10:58:34 - Started 13464
+2021-10-19 10:59:10 - Stopping servidornode.exe
+2021-10-19 10:59:10 - ProcessKill 13464
+2021-10-19 10:59:10 - Found child process: 10060 Name: conhost.exe
+2021-10-19 10:59:10 - Found child process: 10244 Name: node.exe
+2021-10-19 10:59:11 - Stopping process 10060
+2021-10-19 10:59:11 - Send SIGINT 10060
+2021-10-19 10:59:11 - SIGINT to 10060 failed - Killing as fallback
+2021-10-19 10:59:11 - Stopping process 10244
+2021-10-19 10:59:11 - Send SIGINT 10244
+2021-10-19 10:59:11 - SIGINT to 10244 failed - Killing as fallback
+2021-10-19 10:59:11 - Stopping process 13464
+2021-10-19 10:59:11 - Send SIGINT 13464
+2021-10-19 10:59:11 - SIGINT to 13464 failed - Killing as fallback
+2021-10-19 10:59:11 - Finished servidornode.exe
+2021-10-19 11:00:39 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 11:00:39 - Started 9212
+2021-10-19 13:50:07 - Stopping servidornode.exe
+2021-10-19 13:50:07 - ProcessKill 9212
+2021-10-19 13:50:07 - Found child process: 1808 Name: conhost.exe
+2021-10-19 13:50:07 - Found child process: 14140 Name: node.exe
+2021-10-19 13:50:08 - Stopping process 1808
+2021-10-19 13:50:08 - Send SIGINT 1808
+2021-10-19 13:50:08 - SIGINT to 1808 failed - Killing as fallback
+2021-10-19 13:50:08 - Stopping process 14140
+2021-10-19 13:50:08 - Send SIGINT 14140
+2021-10-19 13:50:08 - SIGINT to 14140 failed - Killing as fallback
+2021-10-19 13:50:08 - Stopping process 9212
+2021-10-19 13:50:08 - Send SIGINT 9212
+2021-10-19 13:50:08 - SIGINT to 9212 failed - Killing as fallback
+2021-10-19 13:50:08 - Finished servidornode.exe
+2021-10-19 13:50:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 13:50:11 - Started 12016
+2021-10-19 13:55:23 - Stopping servidornode.exe
+2021-10-19 13:55:23 - ProcessKill 12016
+2021-10-19 13:55:24 - Found child process: 13900 Name: conhost.exe
+2021-10-19 13:55:24 - Found child process: 3688 Name: node.exe
+2021-10-19 13:55:24 - Stopping process 13900
+2021-10-19 13:55:24 - Send SIGINT 13900
+2021-10-19 13:55:24 - SIGINT to 13900 failed - Killing as fallback
+2021-10-19 13:55:24 - Stopping process 3688
+2021-10-19 13:55:24 - Send SIGINT 3688
+2021-10-19 13:55:24 - SIGINT to 3688 failed - Killing as fallback
+2021-10-19 13:55:24 - Stopping process 12016
+2021-10-19 13:55:24 - Send SIGINT 12016
+2021-10-19 13:55:24 - SIGINT to 12016 failed - Killing as fallback
+2021-10-19 13:55:24 - Finished servidornode.exe
+2021-10-19 13:55:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 13:55:25 - Started 13608
+2021-10-19 13:56:18 - Stopping servidornode.exe
+2021-10-19 13:56:18 - ProcessKill 13608
+2021-10-19 13:56:18 - Found child process: 9188 Name: conhost.exe
+2021-10-19 13:56:18 - Found child process: 10564 Name: node.exe
+2021-10-19 13:56:18 - Stopping process 9188
+2021-10-19 13:56:18 - Send SIGINT 9188
+2021-10-19 13:56:18 - SIGINT to 9188 failed - Killing as fallback
+2021-10-19 13:56:18 - Stopping process 10564
+2021-10-19 13:56:18 - Send SIGINT 10564
+2021-10-19 13:56:18 - SIGINT to 10564 failed - Killing as fallback
+2021-10-19 13:56:18 - Stopping process 13608
+2021-10-19 13:56:18 - Send SIGINT 13608
+2021-10-19 13:56:18 - SIGINT to 13608 failed - Killing as fallback
+2021-10-19 13:56:18 - Finished servidornode.exe
+2021-10-19 13:56:19 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 13:56:19 - Started 13280
+2021-10-19 14:01:16 - Stopping servidornode.exe
+2021-10-19 14:01:16 - ProcessKill 13280
+2021-10-19 14:01:16 - Found child process: 8820 Name: conhost.exe
+2021-10-19 14:01:16 - Found child process: 7212 Name: node.exe
+2021-10-19 14:01:16 - Stopping process 8820
+2021-10-19 14:01:16 - Send SIGINT 8820
+2021-10-19 14:01:16 - SIGINT to 8820 failed - Killing as fallback
+2021-10-19 14:01:16 - Stopping process 7212
+2021-10-19 14:01:16 - Send SIGINT 7212
+2021-10-19 14:01:16 - SIGINT to 7212 failed - Killing as fallback
+2021-10-19 14:01:16 - Stopping process 13280
+2021-10-19 14:01:16 - Send SIGINT 13280
+2021-10-19 14:01:16 - SIGINT to 13280 failed - Killing as fallback
+2021-10-19 14:01:16 - Finished servidornode.exe
+2021-10-19 14:01:17 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 14:01:17 - Started 5920
+2021-10-19 14:03:11 - Stopping servidornode.exe
+2021-10-19 14:03:11 - ProcessKill 5920
+2021-10-19 14:03:12 - Found child process: 4784 Name: conhost.exe
+2021-10-19 14:03:12 - Found child process: 15108 Name: node.exe
+2021-10-19 14:03:12 - Stopping process 4784
+2021-10-19 14:03:12 - Send SIGINT 4784
+2021-10-19 14:03:12 - SIGINT to 4784 failed - Killing as fallback
+2021-10-19 14:03:12 - Stopping process 15108
+2021-10-19 14:03:12 - Send SIGINT 15108
+2021-10-19 14:03:12 - SIGINT to 15108 failed - Killing as fallback
+2021-10-19 14:03:12 - Stopping process 5920
+2021-10-19 14:03:12 - Send SIGINT 5920
+2021-10-19 14:03:12 - SIGINT to 5920 failed - Killing as fallback
+2021-10-19 14:03:12 - Finished servidornode.exe
+2021-10-19 14:03:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 14:03:13 - Started 640
+2021-10-19 14:04:04 - Stopping servidornode.exe
+2021-10-19 14:04:04 - ProcessKill 640
+2021-10-19 14:04:04 - Found child process: 1964 Name: conhost.exe
+2021-10-19 14:04:04 - Found child process: 13236 Name: node.exe
+2021-10-19 14:04:05 - Stopping process 1964
+2021-10-19 14:04:05 - Send SIGINT 1964
+2021-10-19 14:04:05 - SIGINT to 1964 failed - Killing as fallback
+2021-10-19 14:04:05 - Stopping process 13236
+2021-10-19 14:04:05 - Send SIGINT 13236
+2021-10-19 14:04:05 - SIGINT to 13236 failed - Killing as fallback
+2021-10-19 14:04:05 - Stopping process 640
+2021-10-19 14:04:05 - Send SIGINT 640
+2021-10-19 14:04:05 - SIGINT to 640 failed - Killing as fallback
+2021-10-19 14:04:05 - Finished servidornode.exe
+2021-10-19 14:04:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 14:04:06 - Started 10536
+2021-10-19 14:05:48 - Stopping servidornode.exe
+2021-10-19 14:05:48 - ProcessKill 10536
+2021-10-19 14:05:48 - Found child process: 9436 Name: conhost.exe
+2021-10-19 14:05:48 - Found child process: 6772 Name: node.exe
+2021-10-19 14:05:48 - Stopping process 9436
+2021-10-19 14:05:48 - Send SIGINT 9436
+2021-10-19 14:05:48 - SIGINT to 9436 failed - Killing as fallback
+2021-10-19 14:05:48 - Stopping process 6772
+2021-10-19 14:05:48 - Send SIGINT 6772
+2021-10-19 14:05:48 - SIGINT to 6772 failed - Killing as fallback
+2021-10-19 14:05:48 - Stopping process 10536
+2021-10-19 14:05:48 - Send SIGINT 10536
+2021-10-19 14:05:48 - SIGINT to 10536 failed - Killing as fallback
+2021-10-19 14:05:48 - Finished servidornode.exe
+2021-10-19 14:05:49 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 14:05:49 - Started 14392
+2021-10-19 14:18:15 - Stopping servidornode.exe
+2021-10-19 14:18:15 - ProcessKill 14392
+2021-10-19 14:18:16 - Found child process: 4008 Name: conhost.exe
+2021-10-19 14:18:16 - Found child process: 12592 Name: node.exe
+2021-10-19 14:18:16 - Stopping process 4008
+2021-10-19 14:18:16 - Send SIGINT 4008
+2021-10-19 14:18:16 - SIGINT to 4008 failed - Killing as fallback
+2021-10-19 14:18:16 - Stopping process 12592
+2021-10-19 14:18:16 - Send SIGINT 12592
+2021-10-19 14:18:16 - SIGINT to 12592 failed - Killing as fallback
+2021-10-19 14:18:16 - Stopping process 14392
+2021-10-19 14:18:16 - Send SIGINT 14392
+2021-10-19 14:18:16 - SIGINT to 14392 failed - Killing as fallback
+2021-10-19 14:18:16 - Finished servidornode.exe
+2021-10-19 14:35:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 14:35:13 - Started 15172
+2021-10-19 14:39:33 - Stopping servidornode.exe
+2021-10-19 14:39:33 - ProcessKill 15172
+2021-10-19 14:39:34 - Found child process: 1412 Name: conhost.exe
+2021-10-19 14:39:34 - Found child process: 6064 Name: node.exe
+2021-10-19 14:39:34 - Stopping process 1412
+2021-10-19 14:39:34 - Send SIGINT 1412
+2021-10-19 14:39:34 - SIGINT to 1412 failed - Killing as fallback
+2021-10-19 14:39:34 - Stopping process 6064
+2021-10-19 14:39:34 - Send SIGINT 6064
+2021-10-19 14:39:34 - SIGINT to 6064 failed - Killing as fallback
+2021-10-19 14:39:34 - Stopping process 15172
+2021-10-19 14:39:34 - Send SIGINT 15172
+2021-10-19 14:39:34 - SIGINT to 15172 failed - Killing as fallback
+2021-10-19 14:39:34 - Finished servidornode.exe
+2021-10-19 17:33:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Daryn\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js --log "ServidorNode wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-19 17:33:24 - Started 9492
+2021-10-19 17:40:50 - Stopping servidornode.exe
+2021-10-19 17:40:50 - ProcessKill 9492
+2021-10-19 17:40:52 - Found child process: 2664 Name: conhost.exe
+2021-10-19 17:40:52 - Found child process: 11180 Name: node.exe
+2021-10-19 17:40:52 - Stopping process 2664
+2021-10-19 17:40:53 - Send SIGINT 2664
+2021-10-19 17:40:53 - SIGINT to 2664 failed - Killing as fallback
+2021-10-19 17:40:53 - Stopping process 11180
+2021-10-19 17:40:53 - Send SIGINT 11180
+2021-10-19 17:40:53 - SIGINT to 11180 failed - Killing as fallback
+2021-10-19 17:40:53 - Stopping process 9492
+2021-10-19 17:40:53 - Send SIGINT 9492
+2021-10-19 17:40:53 - SIGINT to 9492 failed - Killing as fallback
+2021-10-19 17:40:53 - Finished servidornode.exe

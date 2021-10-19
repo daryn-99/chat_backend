@@ -1,0 +1,362 @@
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Uninstall was skipped because process does not exist or could not be found.
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Uninstall was skipped because process does not exist or could not be found.
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Servidor corriendo en puerto undefined
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:351:10
+    at C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\node_modules\mongoose\lib\index.js:350:20)
+    at Object.dbConnection (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\database\config.js:7:24)
+    at Object.<anonymous> (C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js:11:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at internal/main/run_main_module.js:17:47
+Servidor corriendo en puerto undefined
+DB Online
+Servidor corriendo en puerto undefined
+DB Online
+Servidor corriendo en puerto undefined
+DB Online
+DB Online
+Cliente conectado
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/usuarios/614df26f6379b5347cab2361-LOGO RECO YOUR ENERGY, YOUR WORLD (2).png',
+  _id: 614df26f6379b5347cab2361,
+  username: 'eruiz',
+  nombre: 'Edil ',
+  apellido: 'Ruiz',
+  numerotel: '96849850',
+  birth: '1990-01-23',
+  cargo: 'Asistente de contabilidad',
+  area: 'CSA',
+  email: 'test10@test.com',
+  password: '$2a$10$jLbybgvn8cqffQBj7WhLnugWuHexusyhroVOdINCaq8lkR6BudJv.',
+  createdAt: 2021-09-24T15:44:47.778Z,
+  updatedAt: 2021-10-18T14:09:21.566Z
+}
+No se pudo generar el JWT
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/usuarios/614df26f6379b5347cab2361-LOGO RECO YOUR ENERGY, YOUR WORLD (2).png',
+  _id: 614df26f6379b5347cab2361,
+  username: 'eruiz',
+  nombre: 'Edil ',
+  apellido: 'Ruiz',
+  numerotel: '96849850',
+  birth: '1990-01-23',
+  cargo: 'Asistente de contabilidad',
+  area: 'CSA',
+  email: 'test10@test.com',
+  password: '$2a$10$jLbybgvn8cqffQBj7WhLnugWuHexusyhroVOdINCaq8lkR6BudJv.',
+  createdAt: 2021-09-24T15:44:47.778Z,
+  updatedAt: 2021-10-18T14:09:21.566Z
+}
+No se pudo generar el JWT
+DB Online
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/usuarios/614df26f6379b5347cab2361-LOGO RECO YOUR ENERGY, YOUR WORLD (2).png',
+  _id: 614df26f6379b5347cab2361,
+  username: 'eruiz',
+  nombre: 'Edil ',
+  apellido: 'Ruiz',
+  numerotel: '96849850',
+  birth: '1990-01-23',
+  cargo: 'Asistente de contabilidad',
+  area: 'CSA',
+  email: 'test10@test.com',
+  password: '$2a$10$jLbybgvn8cqffQBj7WhLnugWuHexusyhroVOdINCaq8lkR6BudJv.',
+  createdAt: 2021-09-24T15:44:47.778Z,
+  updatedAt: 2021-10-18T14:09:21.566Z
+}
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-18T23:17:32.230Z
+}
+DB Online
+Accion realizada con exito
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-18T23:17:32.230Z
+}
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-18T23:17:32.230Z
+}
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-18T23:17:32.230Z
+}
+DB Online
+DB Online
+{
+  online: false,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-19T16:47:03.917Z
+}
+Accion realizada con exito
+Accion realizada con exito
+Accion realizada con exito
+DB Online
+Accion realizada con exito
+DB Online
+Cliente conectado
+Cliente conectado
+Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Servidor corriendo en puerto 3000
+DB Online
+Servidor corriendo en puerto 3000
+DB Online
+{
+  fieldname: 'imgUrl',
+  originalname: 'WhatsApp Image 2021-07-26 at 7.25.55 AM.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Servidor corriendo en puerto 3000
+DB Online
+{
+  fieldname: 'imgUrl',
+  originalname: 'WhatsApp Image 2021-07-26 at 7.25.55 AM.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+{
+  fieldname: 'imgUrl',
+  originalname: 'WhatsApp Image 2021-07-26 at 7.25.55 AM.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+{
+  fieldname: 'imgUrl',
+  originalname: 'pc.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Servidor corriendo en puerto 3000
+DB Online
+{
+  fieldname: 'imgUrl',
+  originalname: 'pc.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Servidor corriendo en puerto 3000
+DB Online
+{
+  fieldname: 'imgUrl',
+  originalname: 'pc.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Servidor corriendo en puerto 3000
+DB Online
+{
+  fieldname: 'imgUrl',
+  originalname: 'pc.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Accion realizada con exito
+Accion realizada con exito
+{
+  fieldname: 'coverImage',
+  originalname: 'WhatsApp Image 2021-07-26 at 7.25.55 AM.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+Accion realizada con exito
+Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito

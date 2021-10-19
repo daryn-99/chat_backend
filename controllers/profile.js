@@ -146,14 +146,6 @@ const updateProfileImg = async (req, res = response) => {
             if (err) return res.json(err);
             return res.json(result);
         }
-        // (err, profile) => {
-        //     if (err) return res.status(500).send(err);
-        //     const response = {
-        //         message: "image added successfully updated",
-        //         data: profile,
-        //     };
-        //     return res.status(200).send(response);
-        // }
     );
 }
 

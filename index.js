@@ -48,12 +48,35 @@ app.use('/api/role', require('./routes/role'));
 // app.use('/storage', express.static('storage'))
 
 
-server.listen( process.env.PORT, ( err ) => {
+server.listen( 3000, ( err ) => {
 
     if ( err ) throw new Error(err);
 
-    console.log('Servidor corriendo en puerto', process.env.PORT );
+    console.log('Servidor corriendo en puerto', 3000);
 
 });
 
+// var Service = require('node-windows').Service;
 
+// // Create a new service object
+// var svc = new Service({
+//     name:'Node Server Service',
+//     description: 'The nodejs service from RECONNET.',
+//     script: 'C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js'
+// });
+
+// // Listen for the "install" event, which indicates the
+// // process is available as a service.
+// svc.on('install',function(){
+//     svc.start();
+// });
+
+// svc.install();
+
+// svc.on('uninstall',function(){
+//     console.log('Uninstall complete.');
+//     console.log('The service exists: ',svc.exists);
+// });
+
+// // Uninstall the service.
+// svc.uninstall();

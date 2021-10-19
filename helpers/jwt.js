@@ -7,7 +7,7 @@ const generarJWT = ( uid ) => {
 
         const payload = { uid };
         //Vencimiento de token
-        jwt.sign( payload, process.env.JWT_KEY, {
+        jwt.sign( payload, 'haJSHdjksh!!1i27@askjdhm2nasa21', {
             expiresIn: '24h'
         }, ( err, token ) => {
 
