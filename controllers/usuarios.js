@@ -3,6 +3,7 @@ const Usuario = require('../models/usuario');
 const Role = require('../models/role');
 // const imgUrl = require('../libs/storage');
 const path = require('path');
+const usuarioService = require('../controllers/usuario_service');
 
 require('dotenv').config();
 const nodemailer = require('nodemailer');
@@ -102,18 +103,25 @@ const getUsuarioById = async (req, res = response) => {
 
 const updateUserByid = async (req, res = response) => {
 
-    const updatedUser = await Usuario.findByIdAndUpdate(req.params.userId, req.body)
+    const updatedUser = await Usuario.findAndUpdate(req.params.userId, req.body)
 
     // if(req.file){
     //     const {filename} = req.file
     //     updatedUser.setImgUrl(filename)
     // }
+    
 
     res.json({
         ok: true,
         updatedUser
     })
 }
+
+// const modificarUsuario = async(req, res) => {
+//     res.json({
+//         Usuario: await clienteService.modificarcliente(req.body)
+//     })
+// }
 
 const deleteUserByid = async (req, res = response) => {
     const deleteUser = await Usuario.findByIdAndDelete(req.params.userId)
@@ -127,7 +135,8 @@ const deleteUserByid = async (req, res = response) => {
 const passwordUpdate = async (req, res = response) => {
 
 
-    const { email, password } = req.params;
+    const { email } = req.params;
+    const {password} = req.body;
 
     try {
         const existeEmail = await Usuario.findOne({ email });
@@ -137,7 +146,7 @@ const passwordUpdate = async (req, res = response) => {
                 msg: 'El correo no está registrado'
             });
         }
-        const updatedPass = await Usuario.findOneAndUpdate({ email: req.params.email },
+        await Usuario.findOneAndUpdate({ email: req.params.email },
             {
                 $set:
                     { password: req.body.password }
@@ -165,6 +174,12 @@ const passwordUpdate = async (req, res = response) => {
             msg: 'Hable con el administrador'
         })
     }
+}
+
+const modificarUsuario = async(req, res) => {
+    res.json({
+        usuario: await usuarioService.modificarUsuario(req.body)
+    })
 }
 
 const emailForgotPassword = 
@@ -304,5 +319,6 @@ module.exports = {
     emailForgotPassword,
     resetPassword,
     updateImg,
-    getOneUsuario
+    getOneUsuario,
+    modificarUsuario
 }

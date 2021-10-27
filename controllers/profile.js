@@ -123,15 +123,7 @@ const update = async (req, res = response) => {
 const updateProfileImg = async (req, res = response) => {
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
-    //const imgUrl = relPath;
-    const {imgUrl} = req.params;
-    const existeFoto = await Profile.find({imgUrl});
-    if(existeFoto == ""){
-        return res.status(400).json({
-            ok: false,
-            msg: 'No hay foto'
-        });
-    }
+    const imgUrl = relPath;
     Profile.findOneAndUpdate(
         
         { user: req.uid },

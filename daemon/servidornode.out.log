@@ -360,3 +360,203 @@ Cliente conectado
 Accion realizada con exito
 Cliente conectado
 Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-19T22:57:13.905Z
+}
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Cliente conectado
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-19T22:57:13.905Z
+}
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-19T22:57:13.905Z
+}
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-19T22:57:13.905Z
+}
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-21T00:33:26.931Z
+}
+{
+  fieldname: 'imgUrl',
+  originalname: 'WhatsApp Image 2021-07-26 at 8.38.24 AM (1).jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Accion realizada con exito
+Accion realizada con exito
+{
+  fieldname: 'coverImage',
+  originalname: 'WhatsApp Image 2021-07-26 at 8.39.00 AM.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg'
+}
+Cliente conectado
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-21T02:59:46.588Z
+}
+Cliente conectado
+Cliente conectado
+Cliente conectado
+{
+  online: true,
+  role: [ { _id: 60c4dabb0785f8173cc09e2a, name: 'administrador' } ],
+  imgUrl: '/undefined-profiledos.jpeg',
+  _id: 614baf371e080f389805c53a,
+  username: 'dgaleas',
+  nombre: 'Daryn ',
+  apellido: 'Galeas',
+  numerotel: '96849858',
+  birth: '1999/01/19',
+  cargo: 'IT',
+  area: 'CSA',
+  email: 'test19@test.com',
+  password: '$2a$10$P8M6gS06FIG4wdb.UbLG6.nSArl9.sa3JoZue30eZzxmZuoZlfJk6',
+  createdAt: 2021-09-22T22:33:27.525Z,
+  updatedAt: 2021-10-21T02:59:46.588Z
+}
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Cliente conectado
+Accion realizada con exito
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Accion realizada con exito
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Servidor corriendo en puerto 3000
+DB Online
+Servidor corriendo en puerto 3000
+DB Online
+Cliente conectado
+Cliente conectado
+Cliente conectado
