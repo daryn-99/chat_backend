@@ -31,7 +31,7 @@ const getProfiles = async (req, res = response) => {
 const getProfile = async (req, res = response) => {
     Profile.findOne({ user: req.uid }, (err, result) => {
         if (err) return res.json({ err: err });
-        if (result == null) return res.json({ data: ['Añade una descripción'] });
+        if (result == null) return res.json({ data: [] });
         else return res.json({ data: result });
     }).sort({ createdAt: 'desc' })
 }

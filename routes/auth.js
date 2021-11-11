@@ -5,7 +5,7 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
 
-const { crearUsuario, login, renewToken, updateImg } = require('../controllers/auth');
+const { crearUsuario, login, renewToken, updateImg, updateProfileUser } = require('../controllers/auth');
 const upload = require('../middlewares/storage');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT, isAdmin} = require('../middlewares/validar-jwt');
@@ -34,7 +34,9 @@ router.post('/', [
 
 router.get('/renew', validarJWT, renewToken );
 
-router.patch('/update/:id', validarJWT, upload.single('imgUrl'), updateImg);
+router.patch('/update', validarJWT, upload.single('imgUrl'), updateImg);
+
+router.patch('/photoProfile/:id', validarJWT, upload.single('imgUrl'), updateProfileUser);
 
 
 module.exports = router;

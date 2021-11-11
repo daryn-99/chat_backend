@@ -2,6 +2,9 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
+const https = require('https');
+const fs = require('fs');
+
 
 
 require ('./libs/initialSetup').createRole();
@@ -19,7 +22,7 @@ app.use( express.json() );
 
 
 // Node Server
-const server = require('http').createServer(app);
+const server = https.createServer(app);
 module.exports.io = require('socket.io')(server);
 require('./sockets/socket');
 
@@ -46,15 +49,31 @@ app.use('/api/role', require('./routes/role'));
 //app.use('/storage', express.static(`${__dirname}/storage/imgs`))
 
 // app.use('/storage', express.static('storage'))
+//const dns = require('dns');
+const hostname = '192.168.80.149'
+const port= 443;
 
-
-server.listen( 3000, ( err ) => {
-
-    if ( err ) throw new Error(err);
-
-    console.log('Servidor corriendo en puerto', 3000);
-
+https.createServer({
+    cert: fs.readFileSync('reconet.recoroatan.com-crt.pem'),
+    key: fs.readFileSync('reconet.recoroatan.com-key.pem')
+}, app).listen(port, hostname, function(){
+    console.log(`Server running at https://${hostname}:${port}/`);
 });
+
+// server.listen( port, ( err ) => {
+
+//     if ( err ) throw new Error(err);
+
+//     console.log('Servidor corriendo en puerto', port);
+
+// });
+
+// server.listen(port, hostname, () => {
+//     console.log(`Server running at http://${hostname}:${port}/`);
+// });
+
+
+//TODO: Agregar las direcciones, nombre del dominio
 
 // var Service = require('node-windows').Service;
 

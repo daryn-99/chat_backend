@@ -115,6 +115,39 @@ const updateUserByid = async (req, res = response) => {
         ok: true,
         updatedUser
     })
+
+    // let usuario = {};
+    // await Usuario.findOne({ user: req.uid }, (err, result) => {
+    //     if (err) {
+    //         usuario = {};
+    //     }
+    //     if (result != null) {
+    //         usuario = result;
+    //     }
+    // });
+    // Usuario.findOneAndUpdate(
+    //     { _id: req.uid },
+    //     {
+    //         $set: 
+    //         {
+    //             username: req.body.username ? req.body.username : usuario.username,
+    //             nombre: req.body.nombre ? req.body.nombre : usuario.nombre,
+    //             apellido: req.body.apellido ? req.body.apellido : usuario.apellido,
+    //             numerotel: req.body.numerotel ? req.body.numerotel : usuario.numerotel,
+    //             birth: req.body.birth ? req.body.birth : usuario.birth,
+    //             cargo: req.body.cargo ? req.body.cargo : usuario.cargo,
+    //             area: req.body.area ? req.body.area : usuario.area,
+    //             email: req.body.email ? req.body.email : usuario.email,
+                
+    //         },
+    //     },
+    //     { new: true },
+    //     (err, result) => {
+    //         if (err) return res.json({ err: err });
+    //         if (result == null) return res.json({ data: [] });
+    //         else return res.json({ data: result });
+    //     }
+    // );
 }
 
 // const modificarUsuario = async(req, res) => {
@@ -135,7 +168,7 @@ const deleteUserByid = async (req, res = response) => {
 const passwordUpdate = async (req, res = response) => {
 
 
-    const { email } = req.params;
+    const { email } = req.body;
     const {password} = req.body;
 
     try {
@@ -146,7 +179,7 @@ const passwordUpdate = async (req, res = response) => {
                 msg: 'El correo no está registrado'
             });
         }
-        await Usuario.findOneAndUpdate({ email: req.params.email },
+        await Usuario.findOneAndUpdate({email },
             {
                 $set:
                     { password: req.body.password }
@@ -185,49 +218,47 @@ const modificarUsuario = async(req, res) => {
 const emailForgotPassword = 
     async (req, res = response ) => {
 
-        //const { email} = req.params;
+        const { email} = req.body;
 
-        if (req.body.email == '') {
-            res.status(400).send({
+        if (email == '') {
+            res.status(204).send({
                 msg: 'El email es requerido'
             })
         }
 
     // try {
-        const user = await Usuario.findOne({
-            where: {
-                email: req.body.email
-            }
-            })
+        const user = await Usuario.findOne({email});
+        console.log(user.email);
+        //user.email
 
-        if( user ) {
-            return res.status(400).json({
+        if( !user ) {
+            return res.status(206).json({
                 ok: false,
                 msg: 'El correo no está registrado'
             });
         }
 
-            const token = await generarJWT( user );
-
+            //const token = await generarJWT( user );
+            
         const transporter = nodemailer.createTransport({
-            host: 'smtp.mailtrap.io',
-            port: 587,
+            host: 'smtp.gmail.com',
+            port: 465,
             secure: true,
             auth: {
-                user: 'f3019b4e45c176',
-                pass: 'd18ec6e302219d'
+                user: 'puertosammir@gmail.com',
+                pass: 'dadxrawtylnldkxv'
                 // user: `${process.env.EMAIL_ADDRESS}`,
                 // pass: `${process.env.EMAIL_PASSWORD}`,
             }
         });
 
         //const emailPort = process.env.PORT || 3000;
-
+    //console.log(user);
         const mailOptions = {
-            from: '"Hello"<puertosammir@gmail.com>',
-            to: `${user}`,
+            from: 'puertosammir@gmail.com',
+            to: `${user.email}`,
             subject: 'Enlace para recuperar tu contraseña',
-            text: `http://localhost:3000/api/usuarios/resetpassword`
+            text: `https://reconet.recoroatan.com/loginvista.html?`
         };
 
         
@@ -298,6 +329,53 @@ const resetPassword =
             }
         );
     }
+
+    const updateusuarioUser = async (req, res = response) => {
+        const remove = path.join(__dirname,'..','storage')
+        const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+        const imgUrl = relPath;
+        Usuario.findOneAndUpdate(
+            
+            { user: req.params.uid },
+            {
+                $set: {
+                    imgUrl: relPath,
+                },
+            },
+            { new: true },
+            (err, result) => {
+                if (err) return res.json(err);
+                return res.json(result);
+            }
+        );
+    }
+
+
+    const updateDescr = async (req, res = response) => {
+        let usuario = {};
+        await Usuario.findOne({ _id: req.uid }, (err, result) => {
+            if (err) {
+                usuario = {};
+            }
+            if (result != null) {
+                usuario = result;
+            }
+        });
+        Usuario.findOneAndUpdate(
+            { _id: req.uid },
+            {
+                $set: {
+                    descripcion: req.body.descripcion ? req.body.descripcion : usuario.descripcion
+                },
+            },
+            { new: true },
+            (err, result) => {
+                if (err) return res.json({ err: err });
+                if (result == null) return res.json({ data: [] });
+                else return res.json({ data: result });
+            }
+        );
+    }
     
 
 
@@ -320,5 +398,7 @@ module.exports = {
     resetPassword,
     updateImg,
     getOneUsuario,
-    modificarUsuario
+    modificarUsuario,
+    updateusuarioUser,
+    updateDescr
 }

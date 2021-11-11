@@ -6,11 +6,14 @@ const { Router } = require('express');
 const { validarJWT, isAdmin, isGerente, isEmpleado } = require('../middlewares/validar-jwt');
 
 const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid, getLastUsers, getUsersByGroups, getUserRole, passwordUpdate, 
-        emailForgotPassword, resetPassword, updateImg, getOneUsuario, modificarUsuario} = require('../controllers/usuarios');
+        emailForgotPassword, resetPassword, updateImg, getOneUsuario, modificarUsuario, updateDescr} = require('../controllers/usuarios');
 
 
 const router = Router();
 
+router.get('/a/', (req, res ) => {
+    res.render('loginvista.html');
+} );
 
 router.get('/', validarJWT, validarJWT, getUsuarios );
 
@@ -26,11 +29,11 @@ router.get('/orderbygroups', validarJWT, getUsersByGroups )
 
 router.patch('/updateUser', validarJWT, updateUserByid);
 
-router.patch('/passwordUpdate/:email', passwordUpdate);
+router.post('/passwordUpdate', passwordUpdate);
 
 router.delete('/delete/:userId', validarJWT, isAdmin, deleteUserByid);
 
-router.put('/forgotPassword', emailForgotPassword );
+router.post('/forgotPassword', emailForgotPassword );
 
 router.put('/resetPassword', resetPassword);
 
@@ -38,7 +41,9 @@ router.patch('/update', validarJWT, updateImg);
 
 router.get('/getUsuario', validarJWT, getOneUsuario);
 
-router.put('/modificar', validarJWT, modificarUsuario);
+router.put('/modificar/:id', validarJWT, updateUserByid);
+
+router.patch('/updateDes', validarJWT, updateDescr);
 
 
 module.exports = router;

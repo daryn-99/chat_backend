@@ -45,6 +45,11 @@ const UsuarioSchema = Schema({
         type: String,
         required: true
     },
+    descripcion: {
+        type: String,
+        default: "Hello",
+        required: true
+    },
     online: {
         type: Boolean,
         default: false
@@ -55,7 +60,7 @@ const UsuarioSchema = Schema({
     }],
     imgUrl: {
         type: String,
-        default: ''
+        default: '/617c37ddcf5baa1f287ffa44-circlepic.png'
     },
     
     },

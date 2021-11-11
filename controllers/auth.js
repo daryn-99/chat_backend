@@ -46,7 +46,9 @@ const crearUsuario = async (req, res = response ) => {
             usuario.role = [role.id]
         }
 
-        await usuario.save();
+        await usuario.save().then((result) => {
+            res.json({data: result["_id"]});
+        });
         console.log(usuario)
 
         // Generar mi JWT
@@ -136,7 +138,7 @@ const updateImg = async (req, res = response) => {
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
     const imgUrl = relPath;
-    Usuario.findOneAndUpdate({ _id: req.params.id }, 
+    Usuario.findOneAndUpdate(req.params.uid , 
         {
         $set: {
             imgUrl: relPath,
@@ -150,10 +152,55 @@ const updateImg = async (req, res = response) => {
 }
 
 
+const updateProfileUser = async (req, res = response) => {
+    const remove = path.join(__dirname,'..','storage')
+    const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
+    const imgUrl = relPath;
+    let usuario = {};
+
+    Usuario.findOneAndUpdate({ _id: req.params.id }, 
+        {
+        $set: {
+            imgUrl: relPath,
+        },
+    }, { new: true },
+        (err, result) => {
+            if (err) return res.json(err);
+            return res.json(result);
+        } 
+    );
+    
+    // await Usuario.findOne({ user: req.uid }, (err, result) => {
+    //     if (err) {
+    //         usuario = {};
+    //     }
+    //     if (result != null) {
+    //         usuario = result;
+    //     }
+    // });
+    // Usuario.findOneAndUpdate(
+        
+    //     { _id: req.params.id },
+    //     {
+    //         $set: {
+    //             imgUrl: relPath,
+    //         },
+    //     },
+    //     { new: true },
+    //     (err, result) => {
+    //         if (err) return res.json({ err: err });
+    //         if (result == null) return res.json({ data: [] });
+    //         else return res.json({ data: result });
+    //     }
+    // );
+}
+
+
 
 module.exports = {
     crearUsuario,
     login,
     renewToken,
-    updateImg
+    updateImg,
+    updateProfileUser
 }
