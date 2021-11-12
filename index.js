@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
-const https = require('https');
+var https = require('https');
 const fs = require('fs');
 
 
@@ -22,9 +22,9 @@ app.use( express.json() );
 
 
 // Node Server
-const server = https.createServer(app);
-module.exports.io = require('socket.io')(server);
-require('./sockets/socket');
+// var server = require('http').createServer(app);
+// module.exports.io = require('socket.io')(server);
+// require('./sockets/socket');
 
 
 
@@ -53,12 +53,23 @@ app.use('/api/role', require('./routes/role'));
 const hostname = '192.168.80.149'
 const port= 443;
 
-https.createServer({
+var options = {
     cert: fs.readFileSync('reconet.recoroatan.com-crt.pem'),
-    key: fs.readFileSync('reconet.recoroatan.com-key.pem')
-}, app).listen(port, hostname, function(){
+    key: fs.readFileSync('reconet.recoroatan.com-key.pem'),
+    requestCert: false,
+    rejectUnauthorized: false
+};
+
+server = https.createServer(options, app);
+
+
+server.listen(port, hostname, function(){
     console.log(`Server running at https://${hostname}:${port}/`);
 });
+
+module.exports.io = require('socket.io')(server);
+require('./sockets/socket');
+
 
 // server.listen( port, ( err ) => {
 
