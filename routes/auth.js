@@ -34,9 +34,9 @@ router.post('/', [
 
 router.get('/renew', validarJWT, renewToken );
 
-router.patch('/update', validarJWT, upload.single('imgUrl'), updateImg);
+router.patch('/update', validarJWT, isAdmin, upload.single('imgUrl'), updateImg);
 
-router.patch('/photoProfile/:id', validarJWT, upload.single('imgUrl'), updateProfileUser);
+router.patch('/photoProfile', validarJWT, upload.single('imgUrl'), updateProfileUser);
 
 
 module.exports = router;

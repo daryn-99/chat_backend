@@ -46,6 +46,7 @@ app.use('/api/profile', require('./routes/profile'));
 app.use('/api/post', require('./routes/post')); 
 app.use('/api/role', require('./routes/role'));
 
+
 //app.use('/storage', express.static(`${__dirname}/storage/imgs`))
 
 // app.use('/storage', express.static('storage'))
@@ -84,29 +85,29 @@ require('./sockets/socket');
 // });
 
 
-//TODO: Agregar las direcciones, nombre del dominio
+    // //TODO: Agregar las direcciones, nombre del dominio
 
-// var Service = require('node-windows').Service;
+    // var Service = require('node-windows').Service;
 
-// // Create a new service object
-// var svc = new Service({
-//     name:'Node Server Service',
-//     description: 'The nodejs service from RECONNET.',
-//     script: 'C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js'
-// });
+    // // Create a new service object
+    // var svc = new Service({
+    //     name:'Node Server Service',
+    //     description: 'The nodejs service from RECONNET.',
+    //     script: 'C:\Users\Daryn\Desktop\Flutter\chat_backend-1\index.js'
+    // });
 
-// // Listen for the "install" event, which indicates the
-// // process is available as a service.
-// svc.on('install',function(){
-//     svc.start();
-// });
+    // // Listen for the "install" event, which indicates the
+    // // process is available as a service.
+    // // svc.on('install',function(){
+    // //     svc.start();
+    // // });
 
-// svc.install();
+    // // svc.install();
 
-// svc.on('uninstall',function(){
-//     console.log('Uninstall complete.');
-//     console.log('The service exists: ',svc.exists);
-// });
+    // svc.on('uninstall',function(){
+    //     console.log('Uninstall complete.');
+    //     console.log('The service exists: ',svc.exists);
+    // });
 
-// // Uninstall the service.
-// svc.uninstall();
+    // // Uninstall the service.
+    // svc.uninstall();

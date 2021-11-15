@@ -8,32 +8,27 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="estilos.css">
-
+    <link rel="icon" href="/icono.ico">
 
 </head>
 
 <body>
-    <form class="formulario">
-        <form action="usuarios/passwordUpdate" method="POST">
+        <form class="formulario" action="https://reconet.recoroatan.com/api/usuarios/passwordUpdate" method="POST">
             <h1>Actualización de Contraseña</h1>
             <div class="contenedor">
-
-
-
                 <div class="input-contenedor">
                     <i class="fas fa-envelope icon"></i>
                     <input id="name" type="text" placeholder="Correo Electronico" name="email">
-
+                    
                 </div>
-
+                    
                 <div class="input-contenedor">
                     <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña Nueva" name="password">
+                    <input type="text" placeholder="Contraseña Nueva" name="password">
 
                 </div>
                 <input type="submit" value="Enviar" class="button">
             </div>
-        </form>
         </form>
 </body>
 

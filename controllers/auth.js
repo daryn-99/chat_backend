@@ -61,8 +61,7 @@ const crearUsuario = async (req, res = response ) => {
 
 
     } catch (error) {
-        console.log(error);
-        res.status(500).json({
+        res.status(500).status({
             ok: false,
             msg: 'Hable con el administrador'
         });
@@ -138,7 +137,17 @@ const updateImg = async (req, res = response) => {
     const remove = path.join(__dirname,'..','storage')
     const relPath = req.file.path.replace(remove,'').replace(/\\/g, '/')
     const imgUrl = relPath;
-    Usuario.findOneAndUpdate(req.params.uid , 
+
+    let usuario = {};
+        await Usuario.findOne({ _id: req.uid }, (err, result) => {
+            if (err) {
+                usuario = {};
+            }
+            if (result != null) {
+                usuario = result;
+            }
+        });
+    Usuario.findOneAndUpdate({_id: req.uid} , 
         {
         $set: {
             imgUrl: relPath,

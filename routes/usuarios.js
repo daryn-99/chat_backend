@@ -15,9 +15,9 @@ router.get('/a/', (req, res ) => {
     res.render('loginvista.html');
 } );
 
-router.get('/', validarJWT, validarJWT, getUsuarios );
+router.get('/', validarJWT, getUsuarios );
 
-router.get('/allusers', validarJWT, getAllUsuarios );
+router.get('/allusers', validarJWT, isAdmin, getAllUsuarios );
 
 router.get('/:userId', validarJWT, getUsuarioById );
 
@@ -27,7 +27,7 @@ router.get('/lastusers', validarJWT, getLastUsers );
 
 router.get('/orderbygroups', validarJWT, getUsersByGroups )
 
-router.patch('/updateUser', validarJWT, updateUserByid);
+router.put('/updateUser/:id', validarJWT, updateUserByid);
 
 router.post('/passwordUpdate', passwordUpdate);
 
@@ -40,8 +40,6 @@ router.put('/resetPassword', resetPassword);
 router.patch('/update', validarJWT, updateImg);
 
 router.get('/getUsuario', validarJWT, getOneUsuario);
-
-router.put('/modificar/:id', validarJWT, updateUserByid);
 
 router.patch('/updateDes', validarJWT, updateDescr);
 
