@@ -17,7 +17,7 @@ const crearUsuario = async (req, res = response ) => {
 
         const existeEmail = await Usuario.findOne({ email });
         if( existeEmail ) {
-            return res.status(400).json({
+            return res.status(404).json({
                 ok: false,
                 msg: 'El correo ya está registrado'
             });
@@ -87,7 +87,7 @@ const login = async ( req, res = response ) => {
         // Validar el password
         const validPassword = bcrypt.compareSync( password, usuarioDB.password );
         if ( !validPassword ) {
-            return res.status(400).json({
+            return res.status(403).json({
                 ok: false,
                 msg: 'La contraseña no es valida'
             });
@@ -178,30 +178,7 @@ const updateProfileUser = async (req, res = response) => {
             return res.json(result);
         } 
     );
-    
-    // await Usuario.findOne({ user: req.uid }, (err, result) => {
-    //     if (err) {
-    //         usuario = {};
-    //     }
-    //     if (result != null) {
-    //         usuario = result;
-    //     }
-    // });
-    // Usuario.findOneAndUpdate(
-        
-    //     { _id: req.params.id },
-    //     {
-    //         $set: {
-    //             imgUrl: relPath,
-    //         },
-    //     },
-    //     { new: true },
-    //     (err, result) => {
-    //         if (err) return res.json({ err: err });
-    //         if (result == null) return res.json({ data: [] });
-    //         else return res.json({ data: result });
-    //     }
-    // );
+
 }
 
 

@@ -29,7 +29,22 @@ const getUserRoles = async (req, res = response) => {
     }).sort({ createdAt: 'desc'});
 }
 
+const updateUserRole = async (req, res = response) => {
+
+    const { id } = req.params
+    const body = req.body
+    Role.updateOne({ _id: id },
+        body,
+        (err, docs) => {
+            if (err) return res.json({ err: err });
+            res.send({
+                items: docs
+            })
+        })
+}
+
 module.exports = {
     getRoles,
-    getUserRoles
+    getUserRoles,
+    updateUserRole
 }

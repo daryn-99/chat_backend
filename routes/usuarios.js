@@ -6,7 +6,7 @@ const { Router } = require('express');
 const { validarJWT, isAdmin, isGerente, isEmpleado } = require('../middlewares/validar-jwt');
 
 const {getUsuarios, getAllUsuarios, getUsuarioById, updateUserByid, deleteUserByid, getLastUsers, getUsersByGroups, getUserRole, passwordUpdate, 
-        emailForgotPassword, resetPassword, updateImg, getOneUsuario, modificarUsuario, updateDescr} = require('../controllers/usuarios');
+        emailForgotPassword, resetPassword, updateImg, getOneUsuario, modificarUsuario, updateDescr, newPassword} = require('../controllers/usuarios');
 
 
 const router = Router();
@@ -42,6 +42,9 @@ router.patch('/update', validarJWT, updateImg);
 router.get('/getUsuario', validarJWT, getOneUsuario);
 
 router.patch('/updateDes', validarJWT, updateDescr);
+
+router.post('/newpasswordUpdate', validarJWT, newPassword);
+
 
 
 module.exports = router;
